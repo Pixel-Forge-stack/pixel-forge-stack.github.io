@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crop Image Online for Free – Pixel Forge Stack</title>
+  <meta name="description" content="Crop any image online for free. Trim unwanted parts, crop to a square, circle, or custom size. No signup needed. Works on all devices. Fast and private." />
+  <meta name="keywords" content="crop image, crop image online, image cropper, crop photo, crop jpg, crop png, free image crop, crop image to square, crop image online free" />
+  <link rel="canonical" href="https://pixel-forge-stack.github.io/crop-image.html" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pixel Forge Stack" />
+  <meta property="og:title" content="Crop Image Online for Free – Pixel Forge Stack" />
+  <meta property="og:description" content="Crop any image online for free. Trim unwanted parts, crop to a square, circle, or custom size. No signup needed. Works on all devices. Fast and private." />
+  <meta property="og:url" content="https://pixel-forge-stack.github.io/crop-image.html" />
+  <meta property="og:image" content="https://pixel-forge-stack.github.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Crop Image Online for Free – Pixel Forge Stack" />
+  <meta name="twitter:description" content="Crop any image online for free. Trim unwanted parts, crop to a square, circle, or custom size. No signup needed. Works on all devices. Fast and private." />
+  <meta name="twitter:image" content="https://pixel-forge-stack.github.io/og-image.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Crop Image Online for Free",
+  "url": "https://pixel-forge-stack.github.io/crop-image.html",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "description": "Crop any image online for free. Trim unwanted parts, crop to a square, circle, or custom size. No signup needed. Works on all devices. Fast and private.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the crop tool really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, completely free. There is no paid version, no subscription, and no limit on how many images you can crop. All features are available to everyone at no cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does cropping reduce the image quality?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cropping itself does not reduce image quality. When you crop an image, you are simply removing pixels from the edges. The pixels that remain are exactly the same as in the original image. However, if you save as JPG, there is a very small amount of compression applied. To avoid any quality loss at all, save your cropped image as PNG."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I crop a photo to a circle or oval shape?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our current tool crops images to rectangular shapes. For a circular crop, we suggest cropping to a square first using the 1:1 ratio, then using CSS border-radius in your code or design to display it as a circle. We are working on adding a circular crop option in a future update."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my image uploaded to a server when I crop it here?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Your image is never uploaded anywhere. The entire cropping process happens inside your browser on your own device using JavaScript. This makes our tool 100% private and secure. No one else can see or access your image."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I crop to an exact size in pixels?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Use the manual crop coordinate inputs (X, Y, Width, Height) to set an exact crop area in pixels. This is perfect for situations where you need a very specific output size, such as passport photos or product images."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file formats can I upload and download?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can upload JPG, PNG, WEBP, GIF, and BMP files. You can download the cropped result as JPG, PNG, or WEBP. PNG is recommended for the highest quality output since it is lossless."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this work on a mobile phone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Pixel Forge Stack works on any modern smartphone or tablet. You can upload images from your phone's gallery and use touch gestures to draw your crop area. The tool is fully responsive and designed to work on all screen sizes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I undo a crop?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, within the tool you can simply redraw the selection area before downloading. If you have already downloaded the cropped image, you cannot undo that, which is why we recommend keeping a backup of your original image. Your original file on your computer is never modified by our tool."
+      }
+    }
+  ]
+}
+  </script>
+
+  <!-- Open Graph -->
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #0F172A;
+      --navy2:  #1E293B;
+      --cyan:   #06B6D4;
+      --cyan2:  #0891B2;
+      --white:  #F8FAFC;
+      --slate:  #64748B;
+      --light:  #F1F5F9;
+      --border: #E2E8F0;
+      --radius: 14px;
+      --green:  #10B981;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--navy); line-height: 1.7; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(15,23,42,0.96); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(6,182,212,0.15);
+      padding: 0 5%; display: flex; align-items: center; justify-content: space-between; height: 60px;
+    }
+    .logo { font-size: 1.3rem; font-weight: 800; color: var(--white); text-decoration: none; letter-spacing: -0.5px; }
+    .logo span { color: var(--cyan); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: #94A3B8; text-decoration: none; font-size: .9rem; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--cyan); }
+
+    /* ── BREADCRUMB ── */
+    .breadcrumb { background: var(--light); border-bottom: 1px solid var(--border); padding: 10px 5%; font-size: .82rem; color: var(--slate); }
+    .breadcrumb a { color: var(--cyan); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #0E3A47 100%);
+      padding: 60px 5% 50px; text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(6,182,212,0.12); border: 1px solid rgba(6,182,212,0.3);
+      color: var(--cyan); font-size: .78rem; font-weight: 600;
+      padding: 5px 14px; border-radius: 100px;
+      letter-spacing: .04em; text-transform: uppercase; margin-bottom: 18px;
+    }
+    .hero h1 { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 800; color: var(--white); line-height: 1.15; letter-spacing: -1px; margin-bottom: 14px; }
+    .hero h1 span { color: var(--cyan); }
+    .hero > p { color: #94A3B8; font-size: 1rem; max-width: 560px; margin: 0 auto 36px; }
+
+    /* ── TOOL BOX ── */
+    .tool-box { max-width: 760px; margin: 0 auto; background: rgba(255,255,255,0.04); border: 1px solid rgba(6,182,212,0.2); border-radius: 20px; padding: 32px; }
+
+    /* Upload Zone */
+    .upload-zone {
+      border: 2px dashed rgba(6,182,212,0.4); border-radius: 16px;
+      padding: 40px 24px; text-align: center; cursor: pointer;
+      transition: all .25s; animation: pulse-border 3s infinite;
+    }
+    @keyframes pulse-border {
+      0%,100% { border-color: rgba(6,182,212,0.35); box-shadow: 0 0 0 0 rgba(6,182,212,0); }
+      50%      { border-color: rgba(6,182,212,0.7);  box-shadow: 0 0 18px 4px rgba(6,182,212,0.1); }
+    }
+    .upload-zone:hover, .upload-zone.drag-over { border-color: var(--cyan); background: rgba(6,182,212,0.08); transform: translateY(-2px); animation: none; }
+    .upload-zone input { display: none; }
+    .upload-icon { width: 56px; height: 56px; margin: 0 auto 14px; background: rgba(6,182,212,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .upload-icon svg { width: 26px; height: 26px; stroke: var(--cyan); fill: none; stroke-width: 2; }
+    .upload-zone h3 { color: var(--white); font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+    .upload-zone p  { color: #64748B; font-size: .85rem; margin-bottom: 16px; }
+    .btn-choose { background: var(--cyan); color: var(--navy); border: none; border-radius: 10px; padding: 10px 26px; font-weight: 700; font-size: .9rem; cursor: pointer; transition: background .2s, transform .15s; }
+    .btn-choose:hover { background: var(--cyan2); transform: translateY(-1px); }
+
+    /* ── CROP PANEL ── */
+    #cropPanel { display: none; }
+    #cropPanel.active { display: block; }
+
+    .canvas-wrap {
+      position: relative; margin-bottom: 20px; border-radius: 12px; overflow: hidden;
+      border: 1px solid rgba(6,182,212,0.2); background: #0a1628; user-select: none;
+      cursor: crosshair;
+    }
+    #sourceCanvas { display: block; width: 100%; max-height: 420px; object-fit: contain; }
+    #cropOverlay {
+      position: absolute; border: 2px solid var(--cyan);
+      box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+      cursor: move; display: none;
+    }
+    .crop-handle {
+      position: absolute; width: 10px; height: 10px;
+      background: var(--cyan); border-radius: 50%;
+    }
+    .crop-handle.tl { top: -5px; left: -5px; cursor: nw-resize; }
+    .crop-handle.tr { top: -5px; right: -5px; cursor: ne-resize; }
+    .crop-handle.bl { bottom: -5px; left: -5px; cursor: sw-resize; }
+    .crop-handle.br { bottom: -5px; right: -5px; cursor: se-resize; }
+
+    .img-meta { background: rgba(0,0,0,0.55); color: #94A3B8; font-size: .78rem; padding: 6px 12px; display: flex; justify-content: space-between; }
+
+    /* Controls */
+    .ctrl-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 14px; }
+    .field { flex: 1; min-width: 110px; }
+    .field label { display: block; color: #94A3B8; font-size: .8rem; font-weight: 500; margin-bottom: 5px; }
+    .field input, .field select {
+      width: 100%; padding: 9px 12px;
+      background: rgba(255,255,255,0.07); border: 1px solid rgba(6,182,212,0.2);
+      border-radius: 9px; color: var(--white); font-size: .88rem; font-family: inherit;
+    }
+    .field input:focus, .field select:focus { outline: none; border-color: var(--cyan); }
+    .field select option { background: var(--navy2); }
+
+    .section-title { color: #94A3B8; font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 10px; margin-top: 4px; }
+
+    .ratio-chips { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 16px; }
+    .ratio-chip {
+      padding: 6px 13px; border-radius: 8px; font-size: .82rem; font-weight: 600;
+      border: 1px solid var(--border); background: rgba(255,255,255,0.05); color: #94A3B8;
+      cursor: pointer; transition: all .2s;
+    }
+    .ratio-chip:hover { border-color: var(--cyan); color: var(--white); }
+    .ratio-chip.active { background: var(--cyan); color: var(--navy); border-color: var(--cyan); }
+
+    .format-row { display: flex; gap: 8px; margin-bottom: 16px; }
+    .fmt-btn { padding: 7px 14px; border-radius: 8px; font-size: .82rem; font-weight: 600; border: 1px solid var(--border); background: rgba(255,255,255,0.05); color: #94A3B8; cursor: pointer; transition: all .2s; }
+    .fmt-btn.active { background: var(--navy2); color: var(--white); border-color: var(--cyan); }
+
+    .btn-crop { width: 100%; background: var(--cyan); color: var(--navy); border: none; border-radius: 12px; padding: 14px; font-weight: 800; font-size: 1rem; cursor: pointer; transition: background .2s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .btn-crop:hover { background: var(--cyan2); }
+    .btn-reset { width: 100%; background: transparent; color: #64748B; border: 1px solid var(--border); border-radius: 12px; padding: 10px; font-weight: 600; font-size: .88rem; cursor: pointer; margin-top: 8px; transition: all .2s; }
+    .btn-reset:hover { color: var(--white); border-color: #64748B; }
+
+    .status-bar { margin-top: 12px; padding: 10px 14px; border-radius: 9px; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.2); color: var(--green); font-size: .85rem; font-weight: 500; display: none; }
+    .status-bar.active { display: block; }
+
+    /* ── CONTENT ── */
+    .content-wrap { max-width: 860px; margin: 0 auto; padding: 0 5%; }
+    .section-block { padding: 56px 0; border-bottom: 1px solid var(--border); }
+    .section-block:last-child { border-bottom: none; }
+    .section-label { color: var(--cyan); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 8px; }
+    .section-block h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; letter-spacing: -.5px; margin-bottom: 16px; }
+    .section-block p { color: #374151; font-size: .97rem; margin-bottom: 14px; }
+    .section-block p:last-child { margin-bottom: 0; }
+
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 20px; margin-top: 24px; }
+    .step-card { background: var(--light); border-radius: var(--radius); padding: 22px; border: 1px solid var(--border); }
+    .step-num { width: 34px; height: 34px; border-radius: 50%; background: var(--cyan); color: var(--navy); font-weight: 800; font-size: .9rem; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+    .step-card h3 { font-size: .92rem; font-weight: 700; margin-bottom: 5px; }
+    .step-card p  { color: var(--slate); font-size: .83rem; margin: 0; }
+
+    .use-cases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 24px; }
+    .use-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; display: flex; gap: 14px; align-items: flex-start; }
+    .use-icon { width: 38px; height: 38px; background: rgba(6,182,212,0.1); border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .use-icon svg { width: 20px; height: 20px; stroke: var(--cyan); fill: none; stroke-width: 2; }
+    .use-card h3 { font-size: .9rem; font-weight: 700; margin-bottom: 4px; }
+    .use-card p  { font-size: .82rem; color: var(--slate); margin: 0; }
+
+    .tips-list { margin-top: 20px; display: flex; flex-direction: column; gap: 10px; }
+    .tip-item { display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; background: var(--light); border-radius: 10px; border: 1px solid var(--border); }
+    .tip-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); flex-shrink: 0; margin-top: 7px; }
+    .tip-item p { font-size: .88rem; color: #374151; margin: 0; }
+
+    .ratio-explain-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-top: 20px; }
+    .ratio-card { background: var(--light); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+    .ratio-card h4 { font-size: .9rem; font-weight: 700; color: var(--cyan); margin-bottom: 4px; }
+    .ratio-card p  { font-size: .8rem; color: var(--slate); margin: 0; }
+
+    .faq-list { margin-top: 24px; display: flex; flex-direction: column; gap: 14px; }
+    .faq-item { background: var(--light); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    .faq-q { padding: 16px 20px; font-weight: 700; font-size: .95rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .faq-q:hover { color: var(--cyan); }
+    .faq-arrow { font-size: 1.1rem; transition: transform .25s; color: var(--cyan); }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    .faq-a { display: none; padding: 0 20px 16px; color: var(--slate); font-size: .9rem; line-height: 1.7; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ── RELATED TOOLS ── */
+    .related-section { background: var(--light); padding: 56px 5%; }
+    .related-section h2 { text-align: center; font-size: 1.6rem; font-weight: 800; margin-bottom: 8px; }
+    .related-section > p { text-align: center; color: var(--slate); font-size: .9rem; margin-bottom: 28px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; max-width: 900px; margin: 0 auto; }
+    .related-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 16px; text-decoration: none; color: var(--navy); transition: all .2s; display: flex; flex-direction: column; gap: 8px; }
+    .related-card:hover { border-color: var(--cyan); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(6,182,212,0.1); }
+    .related-card .r-icon { width: 36px; height: 36px; background: rgba(6,182,212,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .related-card .r-icon svg { width: 18px; height: 18px; stroke: var(--cyan); fill: none; stroke-width: 2; }
+    .related-card h3 { font-size: .88rem; font-weight: 700; }
+    .related-card p  { font-size: .8rem; color: var(--slate); }
+
+    /* ── FOOTER ── */
+    footer { background: var(--navy); color: #64748B; text-align: center; padding: 36px 5%; }
+    .footer-logo { color: var(--white); font-weight: 800; font-size: 1.1rem; margin-bottom: 14px; }
+    .footer-logo span { color: var(--cyan); }
+    .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
+    .footer-links a { color: #64748B; text-decoration: none; font-size: .85rem; transition: color .2s; }
+    .footer-links a:hover { color: var(--cyan); }
+    footer p { font-size: .82rem; }
+
+    @media (max-width: 600px) { .nav-links { display: none; } .ctrl-row { flex-direction: column; } }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="index.html">Pixel Forge <span>Stack</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#tools">All Tools</a></li>
+    <li><a href="resize-image.html">Resize</a></li>
+    <li><a href="compress-image.html">Compress</a></li>
+    <li><a href="image-to-pdf.html">Image to PDF</a></li>
+  </ul>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">Home</a> &rsaquo; Crop Image
+</div>
+
+<!-- HERO + TOOL -->
+<section class="hero">
+  <div class="hero-badge">Free · No Login · No Watermark</div>
+  <h1>Crop Image <span>Online for Free</span></h1>
+  <p>Remove unwanted parts from any image. Drag to select the area you want to keep, choose an aspect ratio, and download your cropped image instantly.</p>
+
+  <div class="tool-box">
+
+    <!-- Upload Zone -->
+    <div class="upload-zone" id="uploadZone">
+      <input type="file" id="fileInput" accept="image/*" />
+      <div class="upload-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+      </div>
+      <h3>Drop your image here</h3>
+      <p>Supports JPG, PNG, WEBP, GIF, BMP · Max 50MB</p>
+      <button class="btn-choose" onclick="document.getElementById('fileInput').click()">Choose Image</button>
+    </div>
+
+    <!-- Crop Panel -->
+    <div id="cropPanel">
+
+      <!-- Canvas -->
+      <div class="canvas-wrap" id="canvasWrap">
+        <canvas id="sourceCanvas"></canvas>
+        <div id="cropOverlay">
+          <div class="crop-handle tl" data-handle="tl"></div>
+          <div class="crop-handle tr" data-handle="tr"></div>
+          <div class="crop-handle bl" data-handle="bl"></div>
+          <div class="crop-handle br" data-handle="br"></div>
+        </div>
+      </div>
+      <div class="img-meta">
+        <span id="metaName">—</span>
+        <span id="cropInfo">Drag on image to select crop area</span>
+      </div>
+
+      <!-- Aspect Ratio -->
+      <p class="section-title" style="margin-top:18px;">Aspect Ratio</p>
+      <div class="ratio-chips">
+        <div class="ratio-chip active" data-ratio="free" onclick="setRatio('free',this)">Free</div>
+        <div class="ratio-chip" data-ratio="1:1" onclick="setRatio('1:1',this)">1:1 Square</div>
+        <div class="ratio-chip" data-ratio="4:3" onclick="setRatio('4:3',this)">4:3</div>
+        <div class="ratio-chip" data-ratio="16:9" onclick="setRatio('16:9',this)">16:9</div>
+        <div class="ratio-chip" data-ratio="9:16" onclick="setRatio('9:16',this)">9:16</div>
+        <div class="ratio-chip" data-ratio="3:2" onclick="setRatio('3:2',this)">3:2</div>
+        <div class="ratio-chip" data-ratio="2:3" onclick="setRatio('2:3',this)">2:3</div>
+        <div class="ratio-chip" data-ratio="5:4" onclick="setRatio('5:4',this)">5:4</div>
+      </div>
+
+      <!-- Manual coordinates -->
+      <p class="section-title">Manual Crop Coordinates</p>
+      <div class="ctrl-row">
+        <div class="field"><label>X (px)</label><input type="number" id="cropX" value="0" min="0" /></div>
+        <div class="field"><label>Y (px)</label><input type="number" id="cropY" value="0" min="0" /></div>
+        <div class="field"><label>Width (px)</label><input type="number" id="cropW" value="0" min="1" /></div>
+        <div class="field"><label>Height (px)</label><input type="number" id="cropH" value="0" min="1" /></div>
+      </div>
+
+      <!-- Format -->
+      <p class="section-title">Output Format</p>
+      <div class="format-row">
+        <button class="fmt-btn active" onclick="setFormat('jpeg',this)">JPG</button>
+        <button class="fmt-btn" onclick="setFormat('png',this)">PNG</button>
+        <button class="fmt-btn" onclick="setFormat('webp',this)">WEBP</button>
+      </div>
+
+      <button class="btn-crop" onclick="doCrop()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Cropped Image
+      </button>
+      <button class="btn-reset" onclick="resetTool()">✕ Upload a different image</button>
+      <div class="status-bar" id="statusBar"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LONG CONTENT -->
+<div class="content-wrap">
+
+  <!-- How to use -->
+  <div class="section-block">
+    <div class="section-label">Getting Started</div>
+    <h2>How to Crop an Image – Step by Step</h2>
+    <p>Cropping an image is one of the most basic and useful things you can do in photo editing. It simply means cutting out a part of the image and keeping only what you want. With Pixel Forge Stack, you can crop any image for free, right in your browser, without installing any software or creating an account.</p>
+    <p>Here is how to do it in just a few simple steps:</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Upload Your Image</h3>
+        <p>Click "Choose Image" or drag and drop your photo into the upload box. We support JPG, PNG, WEBP, GIF, and BMP files.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Draw Your Crop Area</h3>
+        <p>Click and drag directly on the image to draw a selection box around the area you want to keep. You will see the rest of the image get darkened.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Choose an Aspect Ratio</h3>
+        <p>If you need a specific shape like a square or 16:9, click one of the ratio buttons and the crop box will automatically adjust to that ratio.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3>Download Your Image</h3>
+        <p>Click the download button and your cropped image will save directly to your device. No watermarks, no account needed.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- What is cropping -->
+  <div class="section-block">
+    <div class="section-label">The Basics</div>
+    <h2>What Does It Mean to Crop an Image?</h2>
+    <p>Cropping means removing the outer parts of an image to focus on what matters. Think of it like taking a pair of scissors to a printed photo and cutting away the edges you do not want. When you crop a digital image, you are selecting a rectangular area to keep and everything outside that area gets removed.</p>
+    <p>Cropping is one of the most powerful and commonly used tools in photography and design. A good crop can completely change the feel of a photo. It can remove distracting backgrounds, bring the subject closer, change the shape of the image, or make it fit perfectly in a specific space like an Instagram post or a website banner.</p>
+    <p>With Pixel Forge Stack, cropping is done entirely inside your browser. Your image is loaded onto a canvas on your screen, you select the area you want to keep, and the tool cuts it for you. The entire process happens on your own device, which means your image is completely private and never gets sent to any server.</p>
+  </div>
+
+  <!-- Why crop -->
+  <div class="section-block">
+    <div class="section-label">Common Reasons</div>
+    <h2>Why Do People Crop Images?</h2>
+    <p>There are many everyday situations where you might need to crop a photo. Here are the most common ones:</p>
+    <div class="use-cases-grid">
+      <div class="use-card">
+        <div class="use-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <div>
+          <h3>Remove Unwanted Background</h3>
+          <p>If there is something distracting in the background of your photo, cropping it out is the quickest fix. No editing skills needed.</p>
+        </div>
+      </div>
+      <div class="use-card">
+        <div class="use-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+        <div>
+          <h3>Profile Pictures</h3>
+          <p>Most social media profile pictures need to be square. Crop your photo to a perfect 1:1 ratio so it looks great on any platform.</p>
+        </div>
+      </div>
+      <div class="use-card">
+        <div class="use-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <div>
+          <h3>Social Media Content</h3>
+          <p>Instagram, Facebook, Twitter, and LinkedIn all have different recommended image sizes. Crop your image to the right ratio for each platform.</p>
+        </div>
+      </div>
+      <div class="use-card">
+        <div class="use-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <div>
+          <h3>Passport &amp; ID Photos</h3>
+          <p>Passport and visa application photos need to be cropped to very specific dimensions. Our manual crop coordinate input makes this precise and easy.</p>
+        </div>
+      </div>
+      <div class="use-card">
+        <div class="use-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
+        <div>
+          <h3>Product Photos for Online Stores</h3>
+          <p>E-commerce product images usually need to be square or a specific ratio. Crop your product photos to make them look professional and consistent.</p>
+        </div>
+      </div>
+      <div class="use-card">
+        <div class="use-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
+        <div>
+          <h3>Better Composition</h3>
+          <p>Sometimes a photo is great but the subject is off-centre. Cropping lets you reframe the shot and apply composition rules like the rule of thirds.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aspect ratios explained -->
+  <div class="section-block">
+    <div class="section-label">Ratios Explained</div>
+    <h2>What Are Aspect Ratios and Which One Should You Use?</h2>
+    <p>An aspect ratio is simply the relationship between the width and height of an image. For example, a 1:1 ratio means the image is a perfect square — the width and height are equal. A 16:9 ratio means the image is much wider than it is tall, like a widescreen TV or YouTube video.</p>
+    <p>Choosing the right aspect ratio depends on where you are going to use the image. Here is a quick guide to help you choose:</p>
+    <div class="ratio-explain-grid">
+      <div class="ratio-card">
+        <h4>Free (Custom)</h4>
+        <p>Draw any crop shape you want. No restrictions. Best for creative or unique crops.</p>
+      </div>
+      <div class="ratio-card">
+        <h4>1:1 (Square)</h4>
+        <p>Perfect for Instagram posts, profile pictures, and any platform that displays square images.</p>
+      </div>
+      <div class="ratio-card">
+        <h4>4:3</h4>
+        <p>The classic photo ratio used by many cameras. Good for general photography and presentations.</p>
+      </div>
+      <div class="ratio-card">
+        <h4>16:9</h4>
+        <p>Widescreen ratio. Used for YouTube thumbnails, desktop wallpapers, and website banners.</p>
+      </div>
+      <div class="ratio-card">
+        <h4>9:16</h4>
+        <p>Vertical ratio. Perfect for Instagram Stories, TikTok videos, and mobile-first content.</p>
+      </div>
+      <div class="ratio-card">
+        <h4>3:2</h4>
+        <p>Standard DSLR camera ratio. Good for printing 6×4 inch photos and photo albums.</p>
+      </div>
+      <div class="ratio-card">
+        <h4>2:3</h4>
+        <p>Portrait version of 3:2. Good for portrait photos and Pinterest images.</p>
+      </div>
+      <div class="ratio-card">
+        <h4>5:4</h4>
+        <p>Used for 8×10 inch prints and some older monitor sizes. Good for print photography.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tips -->
+  <div class="section-block">
+    <div class="section-label">Pro Tips</div>
+    <h2>Tips for Cropping Images Like a Pro</h2>
+    <p>Here are some useful tips that will help you get the best results when cropping your images:</p>
+    <div class="tips-list">
+      <div class="tip-item">
+        <div class="tip-dot"></div>
+        <p><strong>Use the rule of thirds.</strong> When cropping a photo, imagine the image divided into nine equal boxes by two horizontal and two vertical lines. Try to place the main subject at one of the four points where those lines intersect. This creates a more visually interesting composition than simply centring the subject.</p>
+      </div>
+      <div class="tip-item">
+        <div class="tip-dot"></div>
+        <p><strong>Do not crop too tight around the subject.</strong> Leaving a little bit of space around the edges makes the image feel more natural and comfortable to look at. Cropping too close can make the image feel cramped or cut off.</p>
+      </div>
+      <div class="tip-item">
+        <div class="tip-dot"></div>
+        <p><strong>Think about where the image will be used before cropping.</strong> If you are cropping a photo for Instagram, use 1:1 for posts or 9:16 for stories. If it is for a YouTube thumbnail, use 16:9. Cropping to the right ratio from the start saves you time later.</p>
+      </div>
+      <div class="tip-item">
+        <div class="tip-dot"></div>
+        <p><strong>Use manual coordinates for pixel-perfect crops.</strong> If you need to crop to exact pixel dimensions, use the X, Y, Width, and Height input fields. This is especially useful for passport photos or product images that require very specific sizes.</p>
+      </div>
+      <div class="tip-item">
+        <div class="tip-dot"></div>
+        <p><strong>Keep the original image.</strong> Our tool processes everything in your browser and does not modify your original file, but it is always a good habit to keep a backup of the original high-resolution image before cropping. Once you crop and save, you cannot get back the removed parts from the downloaded file.</p>
+      </div>
+      <div class="tip-item">
+        <div class="tip-dot"></div>
+        <p><strong>Save as PNG if quality is critical.</strong> If you need the highest possible quality for your cropped image, choose PNG as the output format. PNG is lossless, meaning no quality is lost during saving. This is especially important for logos, text images, or anything where sharpness is critical.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Pixel Forge Stack -->
+  <div class="section-block">
+    <div class="section-label">Why Choose Us</div>
+    <h2>Why Use Pixel Forge Stack to Crop Images?</h2>
+    <p>Cropping tools are everywhere on the internet, but most of them come with annoying limitations. They make you sign up before you can use them. They put a watermark on your image. They upload your photo to a server, which means your private images are being processed on someone else's computer. Some tools even limit how many images you can crop per day unless you pay for a subscription.</p>
+    <p>Pixel Forge Stack is different. Here is why:</p>
+    <p><strong>Everything stays on your device.</strong> When you upload an image to Pixel Forge Stack, it never actually leaves your computer. The image is loaded into your browser using JavaScript, displayed on a canvas element, and processed entirely on your device. No data is sent to any server. This means your photos are completely private, no matter what is in them.</p>
+    <p><strong>No limits, no subscriptions, no accounts.</strong> You can crop as many images as you want, as many times as you want, completely for free. There is no daily limit. There is no premium tier. Every feature you see is available to everyone.</p>
+    <p><strong>Clean downloads, no watermarks.</strong> The image you download is exactly what you cropped. We do not stamp our logo on it. We do not add any text or overlay. The result is a clean, professional image that is entirely yours.</p>
+    <p><strong>Works on any device, any browser.</strong> Whether you are on Windows, macOS, Linux, Android, or iOS, Pixel Forge Stack works perfectly in your browser. You do not need to install anything. Just open the website and start cropping.</p>
+    <p><strong>Multiple ways to crop.</strong> You can draw the crop area with your mouse, use the aspect ratio buttons to lock the shape, or type exact pixel coordinates manually. This flexibility makes the tool useful for beginners and professionals alike.</p>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section-block">
+    <div class="section-label">Common Questions</div>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Is the crop tool really free? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">Yes, completely free. There is no paid version, no subscription, and no limit on how many images you can crop. All features are available to everyone at no cost.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Does cropping reduce the image quality? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">Cropping itself does not reduce image quality. When you crop an image, you are simply removing pixels from the edges. The pixels that remain are exactly the same as in the original image. However, if you save as JPG, there is a very small amount of compression applied. To avoid any quality loss at all, save your cropped image as PNG.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Can I crop a photo to a circle or oval shape? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">Our current tool crops images to rectangular shapes. For a circular crop, we suggest cropping to a square first using the 1:1 ratio, then using CSS border-radius in your code or design to display it as a circle. We are working on adding a circular crop option in a future update.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Is my image uploaded to a server when I crop it here? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">No. Your image is never uploaded anywhere. The entire cropping process happens inside your browser on your own device using JavaScript. This makes our tool 100% private and secure. No one else can see or access your image.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Can I crop to an exact size in pixels? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">Yes. Use the manual crop coordinate inputs (X, Y, Width, Height) to set an exact crop area in pixels. This is perfect for situations where you need a very specific output size, such as passport photos or product images.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">What file formats can I upload and download? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">You can upload JPG, PNG, WEBP, GIF, and BMP files. You can download the cropped result as JPG, PNG, or WEBP. PNG is recommended for the highest quality output since it is lossless.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Does this work on a mobile phone? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">Yes. Pixel Forge Stack works on any modern smartphone or tablet. You can upload images from your phone's gallery and use touch gestures to draw your crop area. The tool is fully responsive and designed to work on all screen sizes.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Can I undo a crop? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">Yes, within the tool you can simply redraw the selection area before downloading. If you have already downloaded the cropped image, you cannot undo that, which is why we recommend keeping a backup of your original image. Your original file on your computer is never modified by our tool.</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- RELATED TOOLS -->
+<section class="related-section">
+  <h2>More Free Image Tools</h2>
+  <p>Everything you need to edit your images, all in one place and all completely free.</p>
+  <div class="related-grid">
+    <a href="resize-image.html" class="related-card">
+      <div class="r-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <h3>Resize Image</h3>
+      <p>Change image dimensions in pixels</p>
+    </a>
+    <a href="compress-image.html" class="related-card">
+      <div class="r-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <h3>Compress Image</h3>
+      <p>Reduce file size in KB or MB</p>
+    </a>
+    <a href="image-to-pdf.html" class="related-card">
+      <div class="r-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <h3>Image to PDF</h3>
+      <p>Convert images to PDF instantly</p>
+    </a>
+    <a href="rotate-flip.html" class="related-card">
+      <div class="r-icon"><svg viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg></div>
+      <h3>Rotate &amp; Flip</h3>
+      <p>Rotate 90° or flip your image</p>
+    </a>
+    <a href="change-aspect-ratio.html" class="related-card">
+      <div class="r-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></div>
+      <h3>Change Aspect Ratio</h3>
+      <p>Switch to 16:9, 1:1, 4:3 and more</p>
+    </a>
+    <a href="watermark.html" class="related-card">
+      <div class="r-icon"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
+      <h3>Add Watermark</h3>
+      <p>Protect your images with text</p>
+    </a>
+    <a href="webp-to-png.html" class="related-card">
+      <div class="r-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+      <h3>WEBP to PNG</h3>
+      <p>Convert WEBP to PNG format</p>
+    </a>
+    <a href="youtube-thumbnail.html" class="related-card">
+      <div class="r-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+      <h3>YouTube Thumbnail</h3>
+      <p>Perfect 1280×720 thumbnail size</p>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Pixel Forge <span>Stack</span></div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="about.html">About</a>
+  </div>
+  <p>© 2026 Pixel Forge Stack. All rights reserved. Free online image tools.</p>
+</footer>
+
+<script>
+  let origW = 0, origH = 0, currentFile = null, outputFormat = 'jpeg';
+  let activeRatio = 'free';
+  let isDragging = false, isMoving = false, activeHandle = null;
+  let startX = 0, startY = 0;
+  let crop = { x: 0, y: 0, w: 0, h: 0 };
+  let scaleX = 1, scaleY = 1;
+
+  const zone      = document.getElementById('uploadZone');
+  const fileInput = document.getElementById('fileInput');
+  const canvas    = document.getElementById('sourceCanvas');
+  const ctx       = canvas.getContext('2d');
+  const overlay   = document.getElementById('cropOverlay');
+  const wrap      = document.getElementById('canvasWrap');
+
+  // Upload
+  zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('drag-over'); });
+  zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+  zone.addEventListener('drop', e => { e.preventDefault(); zone.classList.remove('drag-over'); if (e.dataTransfer.files[0]) loadFile(e.dataTransfer.files[0]); });
+  fileInput.addEventListener('change', () => { if (fileInput.files[0]) loadFile(fileInput.files[0]); });
+
+  function loadFile(file) {
+    currentFile = file;
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => {
+      origW = img.naturalWidth; origH = img.naturalHeight;
+      // Draw to canvas
+      const maxW = wrap.clientWidth || 700;
+      const ratio = Math.min(maxW / origW, 420 / origH, 1);
+      canvas.width  = Math.round(origW * ratio);
+      canvas.height = Math.round(origH * ratio);
+      scaleX = origW / canvas.width;
+      scaleY = origH / canvas.height;
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      document.getElementById('metaName').textContent = file.name + ' · ' + origW + ' × ' + origH + 'px';
+      // Init full crop
+      crop = { x: 0, y: 0, w: canvas.width, h: canvas.height };
+      updateOverlay();
+      overlay.style.display = 'block';
+      zone.style.display = 'none';
+      document.getElementById('cropPanel').classList.add('active');
+    };
+    img.src = url;
+  }
+
+  // Draw selection
+  wrap.addEventListener('mousedown', onDown);
+  document.addEventListener('mousemove', onMove);
+  document.addEventListener('mouseup', onUp);
+  wrap.addEventListener('touchstart', e => onDown(e.touches[0]), { passive: true });
+  document.addEventListener('touchmove', e => onMove(e.touches[0]), { passive: true });
+  document.addEventListener('touchend', onUp);
+
+  function getPos(e) {
+    const r = canvas.getBoundingClientRect();
+    return { x: Math.max(0, Math.min(e.clientX - r.left, canvas.offsetWidth)), y: Math.max(0, Math.min(e.clientY - r.top, canvas.offsetHeight)) };
+  }
+
+  function onDown(e) {
+    const target = e.target;
+    if (target.classList.contains('crop-handle')) {
+      activeHandle = target.dataset.handle;
+      isMoving = false; isDragging = false;
+    } else if (target === overlay) {
+      isMoving = true; activeHandle = null; isDragging = false;
+    } else if (target === canvas) {
+      isDragging = true; isMoving = false; activeHandle = null;
+      const p = getPos(e); startX = p.x; startY = p.y;
+      crop = { x: p.x, y: p.y, w: 0, h: 0 };
+    }
+    const p = getPos(e); startX = p.x; startY = p.y;
+  }
+
+  function onMove(e) {
+    const p = getPos(e);
+    const dx = p.x - startX, dy = p.y - startY;
+    if (isDragging) {
+      let w = p.x - crop.x, h = p.y - crop.y;
+      if (activeRatio !== 'free') {
+        const [rw, rh] = activeRatio.split(':').map(Number);
+        h = w * (rh / rw);
+      }
+      crop.w = w; crop.h = h;
+      updateOverlay(); updateInputs();
+    } else if (isMoving) {
+      crop.x = Math.max(0, Math.min(crop.x + dx, canvas.offsetWidth - crop.w));
+      crop.y = Math.max(0, Math.min(crop.y + dy, canvas.offsetHeight - crop.h));
+      startX = p.x; startY = p.y;
+      updateOverlay(); updateInputs();
+    } else if (activeHandle) {
+      if (activeHandle === 'br') {
+        crop.w = Math.max(20, p.x - crop.x);
+        crop.h = activeRatio !== 'free' ? crop.w * getRatioH() : Math.max(20, p.y - crop.y);
+      } else if (activeHandle === 'tr') {
+        crop.w = Math.max(20, p.x - crop.x);
+        const newH = activeRatio !== 'free' ? crop.w * getRatioH() : Math.max(20, crop.y + crop.h - p.y);
+        crop.y = crop.y + crop.h - newH; crop.h = newH;
+      } else if (activeHandle === 'bl') {
+        const newW = Math.max(20, crop.x + crop.w - p.x);
+        crop.x = p.x; crop.w = newW;
+        crop.h = activeRatio !== 'free' ? newW * getRatioH() : Math.max(20, p.y - crop.y);
+      } else if (activeHandle === 'tl') {
+        const newW = Math.max(20, crop.x + crop.w - p.x);
+        crop.x = p.x; crop.w = newW;
+        const newH = activeRatio !== 'free' ? newW * getRatioH() : Math.max(20, crop.y + crop.h - p.y);
+        crop.y = crop.y + crop.h - newH; crop.h = newH;
+      }
+      startX = p.x; startY = p.y;
+      updateOverlay(); updateInputs();
+    }
+  }
+
+  function onUp() { isDragging = false; isMoving = false; activeHandle = null; }
+
+  function getRatioH() {
+    const [rw, rh] = activeRatio.split(':').map(Number);
+    return rh / rw;
+  }
+
+  function updateOverlay() {
+    const x = Math.min(crop.x, crop.x + crop.w);
+    const y = Math.min(crop.y, crop.y + crop.h);
+    const w = Math.abs(crop.w); const h = Math.abs(crop.h);
+    overlay.style.left   = x + 'px';
+    overlay.style.top    = y + 'px';
+    overlay.style.width  = w + 'px';
+    overlay.style.height = h + 'px';
+    document.getElementById('cropInfo').textContent =
+      Math.round(w * scaleX) + ' × ' + Math.round(h * scaleY) + 'px selected';
+  }
+
+  function updateInputs() {
+    const x = Math.round(Math.min(crop.x, crop.x + crop.w) * scaleX);
+    const y = Math.round(Math.min(crop.y, crop.y + crop.h) * scaleY);
+    const w = Math.round(Math.abs(crop.w) * scaleX);
+    const h = Math.round(Math.abs(crop.h) * scaleY);
+    document.getElementById('cropX').value = x;
+    document.getElementById('cropY').value = y;
+    document.getElementById('cropW').value = w;
+    document.getElementById('cropH').value = h;
+  }
+
+  // Manual input sync
+  ['cropX','cropY','cropW','cropH'].forEach(id => {
+    document.getElementById(id).addEventListener('change', () => {
+      crop.x = parseInt(document.getElementById('cropX').value) / scaleX;
+      crop.y = parseInt(document.getElementById('cropY').value) / scaleY;
+      crop.w = parseInt(document.getElementById('cropW').value) / scaleX;
+      crop.h = parseInt(document.getElementById('cropH').value) / scaleY;
+      updateOverlay();
+    });
+  });
+
+  function setRatio(ratio, btn) {
+    activeRatio = ratio;
+    document.querySelectorAll('.ratio-chip').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    if (ratio !== 'free' && crop.w > 0) {
+      crop.h = crop.w * getRatioH();
+      updateOverlay(); updateInputs();
+    }
+  }
+
+  function setFormat(fmt, btn) {
+    outputFormat = fmt;
+    document.querySelectorAll('.fmt-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+
+  function doCrop() {
+    if (!currentFile) return;
+    const cx = Math.round(Math.min(crop.x, crop.x + crop.w) * scaleX);
+    const cy = Math.round(Math.min(crop.y, crop.y + crop.h) * scaleY);
+    const cw = Math.round(Math.abs(crop.w) * scaleX);
+    const ch = Math.round(Math.abs(crop.h) * scaleY);
+    if (cw < 1 || ch < 1) { alert('Please select a crop area first.'); return; }
+
+    const img = new Image();
+    img.onload = () => {
+      const out = document.createElement('canvas');
+      out.width = cw; out.height = ch;
+      out.getContext('2d').drawImage(img, cx, cy, cw, ch, 0, 0, cw, ch);
+      const mime = outputFormat === 'png' ? 'image/png' : outputFormat === 'webp' ? 'image/webp' : 'image/jpeg';
+      const ext  = outputFormat === 'png' ? 'png' : outputFormat === 'webp' ? 'webp' : 'jpg';
+      const a = document.createElement('a');
+      a.download = 'pixelforgestack-crop-' + cw + 'x' + ch + '.' + ext;
+      a.href = out.toDataURL(mime, 0.92);
+      a.click();
+      const bar = document.getElementById('statusBar');
+      bar.textContent = '✓ Downloaded! Cropped size: ' + cw + ' × ' + ch + 'px';
+      bar.classList.add('active');
+    };
+    img.src = URL.createObjectURL(currentFile);
+  }
+
+  function resetTool() {
+    currentFile = null; origW = 0; origH = 0;
+    zone.style.display = 'block';
+    document.getElementById('cropPanel').classList.remove('active');
+    document.getElementById('statusBar').classList.remove('active');
+    overlay.style.display = 'none';
+    fileInput.value = '';
+  }
+
+  function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+</script>
+</body>
+</html>
