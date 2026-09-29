@@ -1,369 +1,760 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NW63QVR4');</script>
-<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free, private, browser-based audio tools. Trim, convert, and edit audio online — no signup, no uploads, nothing leaves your device.">
+    <meta name="keywords" content="audio tools, free audio editor, audio converter, trim audio, audio toolkit">
+    <meta name="robots" content="index, follow">
+    <title>Audio Toolkit – Free Online Audio Tools</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <meta name="google-site-verification" content="iHCdPahLjoJ7o6UbFgTeyzuOtlJJlDmGqDaCWM5x1Bc" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pixel Forge Stack – Free Online Image Tools</title>
-  <meta name="description" content="Free online image tools. Resize, crop, compress, and convert images instantly in your browser. No upload to servers. your images stay private." />
-  <link rel="canonical" href="https://pixel-forge-stack.github.io/" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Pixel Forge Stack" />
-  <meta property="og:title" content="Pixel Forge Stack – Free Online Image Tools" />
-  <meta property="og:description" content="Free online image tools. Resize, crop, compress, and convert images instantly in your browser. No upload to servers. your images stay private." />
-  <meta property="og:url" content="https://pixel-forge-stack.github.io/" />
-  <meta property="og:image" content="https://pixel-forge-stack.github.io/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Pixel Forge Stack – Free Online Image Tools" />
-  <meta name="twitter:description" content="Free online image tools. Resize, crop, compress, and convert images instantly in your browser. No upload to servers. your images stay private." />
-  <meta name="twitter:image" content="https://pixel-forge-stack.github.io/og-image.png" />
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Pixel Forge Stack",
-  "url": "https://pixel-forge-stack.github.io/",
-  "description": "Free online image tools. Resize, crop, compress, and convert images instantly in your browser. No upload to servers. your images stay private."
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Pixel Forge Stack",
-  "url": "https://pixel-forge-stack.github.io/",
-  "logo": "https://pixel-forge-stack.github.io/favicon-32x32.png"
-}
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --navy:#0F172A; --navy2:#1E293B; --cyan:#06B6D4; --cyan2:#0891B2;
-      --white:#F8FAFC; --slate:#64748B; --light:#F1F5F9; --border:#E2E8F0; --radius:14px;
-    }
-    html{scroll-behavior:smooth}
-    body{font-family:'Inter',sans-serif;background:var(--white);color:var(--navy);line-height:1.6}
+        :root {
+            --bg: #0F0C1A;
+            --accent: #8B5CF6;
+            --accent2: #7C3AED;
+            --white: #F8FAFC;
+            --slate: #94A3B8;
+            --light: #F5F3FA;
+            --border: #E3E0F0;
+            --radius: 14px;
+            --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
 
-    nav{position:sticky;top:0;z-index:100;background:rgba(15,23,42,0.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(6,182,212,0.15);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:60px}
-    .logo{font-size:1.3rem;font-weight:800;color:var(--white);text-decoration:none;letter-spacing:-0.5px}
-    .logo span{color:var(--cyan)}
-    .nav-links{display:flex;gap:28px;list-style:none}
-    .nav-links a{color:#94A3B8;text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
-    .nav-links a:hover{color:var(--cyan)}
+        body {
+            font-family: var(--font);
+            color: #1E1B2E;
+            line-height: 1.6;
+            background: #FFFFFF;
+        }
 
-    .hero{background:linear-gradient(135deg,var(--navy) 0%,#0E3A47 100%);padding:80px 5% 60px;text-align:center}
-    .hero-badge{display:inline-block;background:rgba(6,182,212,0.12);border:1px solid rgba(6,182,212,0.3);color:var(--cyan);font-size:.78rem;font-weight:600;padding:5px 14px;border-radius:100px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:20px}
-    .hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;color:var(--white);line-height:1.15;letter-spacing:-1px;margin-bottom:16px}
-    .hero h1 span{color:var(--cyan)}
-    .hero p{color:#94A3B8;font-size:1.05rem;max-width:520px;margin:0 auto 40px}
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(15, 12, 26, 0.96);
+            backdrop-filter: blur(12px);
+            padding: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+        }
 
-    .upload-zone{max-width:560px;margin:0 auto;border:2px dashed rgba(6,182,212,0.4);border-radius:20px;padding:48px 32px;background:rgba(6,182,212,0.05);cursor:pointer;transition:border-color .25s,background .25s,transform .2s;animation:pulse-border 3s infinite;position:relative}
-    @keyframes pulse-border{0%,100%{border-color:rgba(6,182,212,0.35);box-shadow:0 0 0 0 rgba(6,182,212,0)}50%{border-color:rgba(6,182,212,0.7);box-shadow:0 0 18px 4px rgba(6,182,212,0.12)}}
-    .upload-zone:hover,.upload-zone.drag-over{border-color:var(--cyan);background:rgba(6,182,212,0.1);transform:translateY(-2px);animation:none}
-    .upload-icon{width:60px;height:60px;margin:0 auto 16px;background:rgba(6,182,212,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center}
-    .upload-icon svg{width:28px;height:28px;stroke:var(--cyan);fill:none;stroke-width:2}
-    .upload-zone h3{color:var(--white);font-size:1.1rem;font-weight:700;margin-bottom:6px}
-    .upload-zone p{color:#64748B;font-size:.88rem}
-    .upload-zone input{display:none}
-    .btn-upload{margin-top:20px;background:var(--cyan);color:var(--navy);border:none;border-radius:10px;padding:11px 28px;font-weight:700;font-size:.95rem;cursor:pointer;transition:background .2s,transform .15s;display:inline-block}
-    .btn-upload:hover{background:var(--cyan2);transform:translateY(-1px)}
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--white);
+            text-decoration: none;
+        }
 
-    section{padding:70px 5%}
-    .section-label{text-align:center;color:var(--cyan);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
-    section h2{text-align:center;font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:800;letter-spacing:-0.5px;margin-bottom:48px}
+        .logo span {
+            color: var(--accent);
+        }
 
-    .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;max-width:1100px;margin:0 auto}
-    .tool-card{background:var(--light);border:1px solid var(--border);border-radius:var(--radius);padding:22px 18px;text-decoration:none;color:var(--navy);transition:transform .2s,box-shadow .2s,border-color .2s;display:flex;flex-direction:column;gap:10px}
-    .tool-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(6,182,212,0.12);border-color:var(--cyan)}
-    .tool-icon{width:42px;height:42px;background:rgba(6,182,212,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center}
-    .tool-icon svg{width:22px;height:22px;stroke:var(--cyan);fill:none;stroke-width:2}
-    .tool-card h3{font-size:.95rem;font-weight:700}
-    .tool-card p{font-size:.82rem;color:var(--slate)}
+        .nav-links {
+            display: flex;
+            gap: 26px;
+            list-style: none;
+        }
 
-    .sizes-section{background:var(--light)}
-    .sizes-grid{display:flex;flex-wrap:wrap;gap:10px;max-width:900px;margin:0 auto;justify-content:center}
-    .size-chip{padding:8px 16px;background:var(--white);border:1px solid var(--border);border-radius:100px;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:all .2s}
-    .size-chip:hover{background:var(--cyan);color:var(--white);border-color:var(--cyan);transform:translateY(-1px)}
+        .nav-links a {
+            color: #B8B3D1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
 
-    .how-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;max-width:860px;margin:0 auto}
-    .how-step{text-align:center}
-    .step-num{width:48px;height:48px;border-radius:50%;background:var(--cyan);color:var(--navy);font-size:1.1rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
-    .how-step h3{font-size:1rem;font-weight:700;margin-bottom:6px}
-    .how-step p{color:var(--slate);font-size:.88rem}
+        .nav-links a:hover {
+            color: var(--accent);
+        }
 
-    .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:1000px;margin:0 auto}
-    .why-card{border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;gap:14px;align-items:flex-start}
-    .why-dot{width:10px;height:10px;border-radius:50%;background:var(--cyan);flex-shrink:0;margin-top:6px}
-    .why-card h3{font-size:.95rem;font-weight:700;margin-bottom:4px}
-    .why-card p{font-size:.85rem;color:var(--slate)}
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+            }
+        }
 
-    footer{background:var(--navy);color:#64748B;text-align:center;padding:36px 5%}
-    footer .footer-logo{color:var(--white);font-weight:800;font-size:1.1rem;margin-bottom:14px}
-    footer .footer-logo span{color:var(--cyan)}
-    footer .footer-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
-    footer .footer-links a{color:#64748B;text-decoration:none;font-size:.85rem;transition:color .2s}
-    footer .footer-links a:hover{color:var(--cyan)}
-    footer p{font-size:.82rem}
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--bg) 0%, #241A3D 100%);
+            padding: 90px 5% 70px;
+            text-align: center;
+            color: var(--white);
+        }
 
-    @media (max-width:600px){.nav-links{display:none}}
-  </style>
+        .hero-badge {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #B8B3D1;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent2);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+        }
+
+        .btn-secondary:hover {
+            background: var(--light);
+        }
+
+        /* Search Section */
+        .search-section {
+            padding: 50px 5%;
+            background: white;
+            text-align: center;
+        }
+
+        .search-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: #1E1B2E;
+        }
+
+        .search-wrapper {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 14px 20px 14px 45px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--slate);
+        }
+
+        /* Category Filter */
+        .category-filter {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid var(--border);
+            background: white;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+            color: #1E1B2E;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            border-color: var(--accent);
+            background: var(--light);
+            color: var(--accent);
+        }
+
+        /* Tools Grid */
+        .tools-section {
+            padding: 60px 5%;
+            background: white;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #1E1B2E;
+            text-align: center;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .tool-card {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px;
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tool-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 8px 24px rgba(139, 92, 246, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .tool-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: #1E1B2E;
+        }
+
+        .tool-card p {
+            color: var(--slate);
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+
+        .tool-formats {
+            font-size: 0.85rem;
+            color: var(--accent);
+            background: var(--light);
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin-top: auto;
+        }
+
+        .tool-card.hidden {
+            display: none;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 60px 5%;
+            background: linear-gradient(135deg, var(--bg) 0%, #241A3D 100%);
+            color: var(--white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(139, 92, 246, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: #B8B3D1;
+        }
+
+        /* Footer */
+        footer {
+            background: #0F0C1A;
+            color: #B8B3D1;
+            padding: 40px 5%;
+            text-align: center;
+            border-top: 1px solid rgba(139, 92, 246, 0.1);
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW63QVR4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">Audio<span>Toolkit</span></a>
+        <ul class="nav-links">
+            <li><a href="#tools">All Tools</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-badge">Free · Private · No Signup</div>
+        <h1>Free Online Audio Tools</h1>
+        <p>Trim, convert, and edit audio right in your browser. No uploads, no accounts — your files stay on your device.</p>
+        <div class="hero-buttons">
+            <a href="/audio-trimmer.html" class="btn btn-primary">Try the Audio Trimmer →</a>
+            <a href="#tools" class="btn btn-secondary">Explore All Tools</a>
+        </div>
+    </section>
 
-<nav>
-  <a class="logo" href="index.html">Pixel Forge <span>Stack</span></a>
-  <ul class="nav-links">
-    <li><a href="#tools">Tools</a></li>
-    <li><a href="#how">How It Works</a></li>
-    <li><a href="#why">Why Pixel Forge Stack</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</nav>
+    <!-- Search & Filter Section -->
+    <section class="search-section">
+        <h2>Find the Right Tool</h2>
+        <div class="search-wrapper">
+            <span class="search-icon">🔍</span>
+            <input 
+                type="text" 
+                class="search-input" 
+                id="searchInput" 
+                placeholder="Search tools by name or format..."
+            >
+        </div>
+        <div class="category-filter">
+            <button class="filter-btn active" data-category="all">All Tools</button>
+            <button class="filter-btn" data-category="conversion">Conversion</button>
+            <button class="filter-btn" data-category="editing">Editing</button>
+            <button class="filter-btn" data-category="analysis">Analysis</button>
+            <button class="filter-btn" data-category="recording">Recording</button>
+            <button class="filter-btn" data-category="effects">Effects</button>
+        </div>
+    </section>
 
-<section class="hero">
-  <div class="hero-badge">Free · Private · No Login</div>
-  <h1>Free Online Image Tools<br /><span>Resize, Compress, Convert &amp; Edit</span></h1>
-  <p>No uploads to servers. Your images stay on your device — fast, secure, and completely free.</p>
+    <!-- Tools Section -->
+    <section class="tools-section" id="tools">
+        <h2 class="section-title">Our Tools</h2>
+        <div class="tools-grid" id="toolsGrid">
+            <!-- Tools will be inserted here by JavaScript -->
+        </div>
+    </section>
 
-  <a href="resize-image.html" class="upload-zone" style="display:block;text-decoration:none">
-    <div class="upload-icon">
-      <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-    </div>
-    <h3>Start with Resize Image</h3>
-    <p>Click to open our most popular tool — or scroll down to see all tools</p>
-  </a>
-</section>
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2 class="section-title" style="color: white; margin-bottom: 20px;">Why Audio Toolkit</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Processed Locally</h3>
+                <p>Your audio files are handled entirely in your browser and never uploaded anywhere. Complete privacy guaranteed.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>No Signup Required</h3>
+                <p>No account, no email, no login. Open a tool and start using it right away. Get started instantly.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Genuinely Free</h3>
+                <p>Every tool is free to use, with no artificial limits, paywalls, or paid tiers. Always free.</p>
+            </div>
+        </div>
+    </section>
 
-<section id="tools">
-  <div class="section-label">Everything You Need</div>
-  <h2>Popular Image Tools</h2>
-  <div class="tools-grid">
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Audio Toolkit. Built with ❤️ for privacy.</p>
+        <p style="margin-top: 20px; font-size: 0.9rem;">
+            <a href="/about.html">About</a> · 
+            <a href="/privacy.html">Privacy Policy</a> · 
+            <a href="/contact.html">Contact</a>
+        </p>
+    </footer>
 
-    <a href="resize-image.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-      <h3>Resize Image</h3>
-      <p>Set exact pixel dimensions or use presets.</p>
-    </a>
+    <script>
+        // Tools Database
+        const tools = [
+            {
+                name: "Audio Trimmer",
+                description: "Cut any audio file down to exactly the part you need, with a waveform preview.",
+                url: "/audio-trimmer.html",
+                category: "editing",
+                formats: "MP3, WAV, OGG, M4A, AAC, FLAC"
+            },
+            {
+                name: "MP3 Converter",
+                description: "Convert any audio format to MP3 or WAV with customizable quality settings.",
+                url: "/audio-converter.html",
+                category: "conversion",
+                formats: "WAV, OGG, M4A, AAC, FLAC → MP3, WAV"
+            },
+            {
+                name: "Video to MP3",
+                description: "Extract audio from MP4, MOV, and WEBM video files, free. Perfect for saving music from videos.",
+                url: "/video-to-mp3.html",
+                category: "conversion",
+                formats: "MP4, MOV, WEBM → MP3"
+            },
+            {
+                name: "M4A to MP3",
+                description: "Convert iPhone voice memos and AAC audio to universal MP3 format.",
+                url: "/m4a-to-mp3.html",
+                category: "conversion",
+                formats: "M4A, AAC → MP3"
+            },
+            {
+                name: "MP4 to WAV",
+                description: "Extract lossless WAV audio from a video file. Best for editing software.",
+                url: "/mp4-to-wav.html",
+                category: "conversion",
+                formats: "MP4 → WAV"
+            },
+            {
+                name: "M4A to WAV",
+                description: "Convert iPhone voice memos to lossless WAV format for editing.",
+                url: "/m4a-to-wav.html",
+                category: "conversion",
+                formats: "M4A → WAV"
+            },
+            {
+                name: "Audio Merger",
+                description: "Combine multiple audio clips into one file, in any order you want.",
+                url: "/audio-merger.html",
+                category: "editing",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "Volume Booster",
+                description: "Boost or normalize audio volume with clipping protection to prevent distortion.",
+                url: "/volume-booster.html",
+                category: "effects",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "WAV to MP3",
+                description: "Shrink large lossless WAV files into compact MP3s with quality control.",
+                url: "/wav-to-mp3.html",
+                category: "conversion",
+                formats: "WAV → MP3"
+            },
+            {
+                name: "MP3 to WAV",
+                description: "Convert MP3 to WAV for editing software that requires lossless audio.",
+                url: "/mp3-to-wav.html",
+                category: "conversion",
+                formats: "MP3 → WAV"
+            },
+            {
+                name: "OGG to MP3",
+                description: "Convert OGG Vorbis audio to universal MP3 format for better compatibility.",
+                url: "/ogg-to-mp3.html",
+                category: "conversion",
+                formats: "OGG → MP3"
+            },
+            {
+                name: "MP3 to OGG",
+                description: "Convert MP3 to OGG with WAV fallback for maximum compatibility.",
+                url: "/mp3-to-ogg.html",
+                category: "conversion",
+                formats: "MP3 → OGG"
+            },
+            {
+                name: "FLAC to MP3",
+                description: "Shrink lossless FLAC into a universally-playable MP3 format.",
+                url: "/flac-to-mp3.html",
+                category: "conversion",
+                formats: "FLAC → MP3"
+            },
+            {
+                name: "Audio Reverser",
+                description: "Play any audio file backwards, no quality loss. Perfect for creative projects.",
+                url: "/audio-reverser.html",
+                category: "effects",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "Fade In/Out Adder",
+                description: "Smooth out abrupt starts and endings with professional fade effects.",
+                url: "/fade-in-out.html",
+                category: "editing",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "Silence Remover",
+                description: "Automatically trim dead air from start and end of your audio files.",
+                url: "/silence-remover.html",
+                category: "editing",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "Speed Changer",
+                description: "Speed up or slow down audio playback from 0.5x to 2x without pitch changes.",
+                url: "/speed-changer.html",
+                category: "effects",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "Voice Recorder",
+                description: "Record from your microphone, free and private. All recordings stay on your device.",
+                url: "/voice-recorder.html",
+                category: "recording",
+                formats: "WAV, MP3"
+            },
+            {
+                name: "AAC to MP3",
+                description: "Convert AAC audio to universal MP3 format for maximum device compatibility.",
+                url: "/aac-to-mp3.html",
+                category: "conversion",
+                formats: "AAC → MP3"
+            },
+            {
+                name: "Ringtone Maker",
+                description: "Turn any song into a ready-to-use ringtone clip in seconds.",
+                url: "/ringtone-maker.html",
+                category: "editing",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "MP3 Tag Editor",
+                description: "Edit title, artist, album, and other metadata in your MP3 files.",
+                url: "/mp3-tag-editor.html",
+                category: "editing",
+                formats: "MP3"
+            },
+            {
+                name: "Stereo to Mono",
+                description: "Combine channels into mono, effectively halving the file size.",
+                url: "/stereo-to-mono.html",
+                category: "effects",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "Audio Loop Maker",
+                description: "Repeat a clip to a set count or target length. Perfect for creating loops.",
+                url: "/loop-maker.html",
+                category: "editing",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "Waveform Image Generator",
+                description: "Turn audio into a downloadable PNG waveform image for visualization.",
+                url: "/waveform-image.html",
+                category: "analysis",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "Metronome",
+                description: "Free, precise online metronome with tap tempo. Essential for musicians.",
+                url: "/metronome.html",
+                category: "analysis",
+                formats: "N/A"
+            },
+            {
+                name: "Guitar Tuner",
+                description: "Real-time pitch detection using your microphone. Accurate and reliable.",
+                url: "/guitar-tuner.html",
+                category: "analysis",
+                formats: "Microphone input"
+            },
+            {
+                name: "BPM Detector",
+                description: "Estimate the tempo of any audio file. Perfect for DJs and producers.",
+                url: "/bpm-detector.html",
+                category: "analysis",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "Audio Equalizer",
+                description: "Adjust bass, mid, and treble with live preview before saving.",
+                url: "/audio-equalizer.html",
+                category: "effects",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "Text to Speech",
+                description: "Hear any text read aloud using high-quality built-in voices.",
+                url: "/text-to-speech.html",
+                category: "recording",
+                formats: "Text → MP3, WAV"
+            },
+            {
+                name: "Voice to Text",
+                description: "Live speech dictation. Convert your voice to text in real-time.",
+                url: "/voice-to-text.html",
+                category: "recording",
+                formats: "Microphone input → Text"
+            },
+            {
+                name: "Vocal Remover",
+                description: "Reduce center-panned vocals for karaoke tracks. Creates instant backing tracks.",
+                url: "/vocal-remover.html",
+                category: "effects",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "Audio Splitter",
+                description: "Split one file into equal parts or custom points. Great for podcasts.",
+                url: "/audio-splitter.html",
+                category: "editing",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "Sample Rate Converter",
+                description: "Convert to 44.1kHz, 48kHz, 96kHz, and more. For professional editing.",
+                url: "/sample-rate-converter.html",
+                category: "conversion",
+                formats: "MP3, WAV, OGG, M4A"
+            },
+            {
+                name: "White Noise Generator",
+                description: "White, pink, and brown noise for sleep, focus, or meditation.",
+                url: "/white-noise-generator.html",
+                category: "recording",
+                formats: "Generated → MP3, WAV"
+            },
+            {
+                name: "Audio Compressor",
+                description: "Shrink file size with a live size estimate. Lossy compression options.",
+                url: "/audio-compressor.html",
+                category: "conversion",
+                formats: "MP3, WAV, OGG, M4A"
+            }
+        ];
 
-    <a href="crop-image.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg></div>
-      <h3>Crop Image</h3>
-      <p>Crop freely or pick a preset aspect ratio.</p>
-    </a>
+        // Initialize
+        function initTools() {
+            renderTools(tools);
+            setupEventListeners();
+        }
 
-    <a href="compress-image.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-      <h3>Compress Image</h3>
-      <p>Reduce file size without visible quality loss.</p>
-    </a>
+        // Render tools
+        function renderTools(toolsToRender) {
+            const grid = document.getElementById('toolsGrid');
+            grid.innerHTML = '';
 
-    <a href="image-to-pdf.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-      <h3>Image to PDF</h3>
-      <p>Convert one or multiple images to a PDF file.</p>
-    </a>
+            toolsToRender.forEach(tool => {
+                const card = document.createElement('a');
+                card.href = tool.url;
+                card.className = 'tool-card';
+                card.innerHTML = `
+                    <h3>${tool.name}</h3>
+                    <p>${tool.description}</p>
+                    <div class="tool-formats">${tool.formats}</div>
+                `;
+                grid.appendChild(card);
+            });
+        }
 
-    <a href="change-aspect-ratio.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg></div>
-      <h3>Change Aspect Ratio</h3>
-      <p>Switch between 1:1, 16:9, 4:3, and more.</p>
-    </a>
+        // Setup event listeners
+        function setupEventListeners() {
+            const searchInput = document.getElementById('searchInput');
+            const filterBtns = document.querySelectorAll('.filter-btn');
 
-    <a href="rotate-flip.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg></div>
-      <h3>Rotate &amp; Flip</h3>
-      <p>Rotate 90°/180° or flip horizontally/vertically.</p>
-    </a>
+            searchInput.addEventListener('input', filterTools);
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterTools();
+                });
+            });
+        }
 
-    <a href="youtube-thumbnail.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-      <h3>YouTube Thumbnail</h3>
-      <p>Resize any image to the perfect 1280×720 thumbnail.</p>
-    </a>
+        // Filter tools
+        function filterTools() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const activeCategory = document.querySelector('.filter-btn.active').dataset.category;
 
-    <a href="stretch-image.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></div>
-      <h3>Stretch Image</h3>
-      <p>Stretch to any dimension, ignoring original ratio.</p>
-    </a>
+            const filtered = tools.filter(tool => {
+                const matchesSearch = tool.name.toLowerCase().includes(searchInput) ||
+                                    tool.description.toLowerCase().includes(searchInput) ||
+                                    tool.formats.toLowerCase().includes(searchInput);
+                const matchesCategory = activeCategory === 'all' || tool.category === activeCategory;
+                return matchesSearch && matchesCategory;
+            });
 
-    <a href="jpg-to-png.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-      <h3>JPG to PNG</h3>
-      <p>Convert JPG photos to lossless, transparency-ready PNG.</p>
-    </a>
+            renderTools(filtered);
+        }
 
-    <a href="png-to-jpg.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-      <h3>PNG to JPG</h3>
-      <p>Shrink PNG images into lightweight, shareable JPG files.</p>
-    </a>
-
-    <a href="black-and-white-image.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 000 20z" fill="currentColor"/></svg></div>
-      <h3>Black &amp; White</h3>
-      <p>Convert photos to grayscale with brightness &amp; contrast control.</p>
-    </a>
-
-    <a href="webp-to-png.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-      <h3>WEBP to PNG</h3>
-      <p>Convert modern WEBP images to universal PNG format.</p>
-    </a>
-
-    <a href="heic-to-jpg.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-      <h3>HEIC to JPG</h3>
-      <p>Convert iPhone HEIC photos to widely-supported JPG.</p>
-    </a>
-
-    <a href="watermark.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
-      <h3>Add Watermark</h3>
-      <p>Stamp text watermarks with custom opacity.</p>
-    </a>
-
-    <a href="resize-for-print.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
-      <h3>Resize for Print</h3>
-      <p>Prepare photos for 4×6, A4, passport, and more.</p>
-    </a>
-
-    <a href="image-to-ico.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 8h.01M16 8h.01M8 16h8"/></svg></div>
-      <h3>Image to ICO</h3>
-      <p>Turn any image into a Windows/favicon .ico file.</p>
-    </a>
-
-    <a href="ico-to-image.html" class="tool-card">
-      <div class="tool-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-      <h3>ICO to Image</h3>
-      <p>Convert .ico icon files to PNG or JPG.</p>
-    </a>
-
-  </div>
-</section>
-
-<section class="sizes-section">
-  <div class="section-label">One-Click Tools</div>
-  <h2>Quick Links to Common Sizes</h2>
-  <div class="sizes-grid">
-    <a href="resize-image-256x256.html" class="size-chip">Resize to 256 × 256</a>
-    <a href="resize-image-1920x1080.html" class="size-chip">Resize to 1920 × 1080</a>
-    <a href="youtube-thumbnail.html" class="size-chip">1280 × 720 Thumbnail</a>
-    <a href="resize-image-passport.html" class="size-chip">Passport Photo Size</a>
-    <a href="resize-image-a4.html" class="size-chip">A4 Print Size</a>
-    <a href="resize-for-print.html" class="size-chip">4 × 6 inch Print</a>
-    <a href="compress-image-to-150kb.html" class="size-chip">Compress to 150 KB</a>
-    <a href="compress-image-to-2mb.html" class="size-chip">Compress to 2 MB</a>
-    <a href="compress-image-to-100kb.html" class="size-chip">Compress to 100 KB</a>
-    <a href="compress-image-to-200kb.html" class="size-chip">Compress to 200 KB</a>
-    <a href="compress-image-to-1mb.html" class="size-chip">Compress to 1 MB</a>
-    <a href="change-aspect-ratio.html" class="size-chip">1:1 Square</a>
-    <a href="resize-image-instagram.html" class="size-chip">Instagram Post Size</a>
-    <a href="resize-image-facebook-cover.html" class="size-chip">Facebook Cover Size</a>
-    <a href="resize-image-4k.html" class="size-chip">4K Resolution</a>
-    <a href="resize-image-512x512.html" class="size-chip">Resize to 512 × 512</a>
-    <a href="resize-image-1024x768.html" class="size-chip">Resize to 1024 × 768</a>
-    <a href="resize-image-800x600.html" class="size-chip">Resize to 800 × 600</a>
-    <a href="resize-image-2560x1440.html" class="size-chip">Resize to 2560 × 1440</a>
-    <a href="image-to-ico.html" class="size-chip">Image to ICO / Favicon</a>
-    <a href="resize-image-linkedin-banner.html" class="size-chip">LinkedIn Banner Size</a>
-    <a href="resize-image-twitter-header.html" class="size-chip">Twitter/X Header Size</a>
-    <a href="resize-image-whatsapp-dp.html" class="size-chip">WhatsApp DP Size</a>
-    <a href="resize-image-tiktok-profile-picture.html" class="size-chip">TikTok Profile Picture Size</a>
-  </div>
-</section>
-
-<section id="how">
-  <div class="section-label">Simple Steps</div>
-  <h2>How It Works</h2>
-  <div class="how-grid">
-    <div class="how-step">
-      <div class="step-num">1</div>
-      <h3>Choose a Tool</h3>
-      <p>Pick the tool you need from the list above — resize, crop, compress, convert, and more.</p>
-    </div>
-    <div class="how-step">
-      <div class="step-num">2</div>
-      <h3>Upload Your Image</h3>
-      <p>Click upload or drag and drop your photo directly onto the tool.</p>
-    </div>
-    <div class="how-step">
-      <div class="step-num">3</div>
-      <h3>Download Instantly</h3>
-      <p>Hit download — your edited image saves directly to your device. No watermark.</p>
-    </div>
-  </div>
-</section>
-
-<section id="why" style="background:var(--light)">
-  <div class="section-label">Why Pixel Forge Stack</div>
-  <h2>Built for Real Use</h2>
-  <div class="why-grid">
-    <div class="why-card">
-      <div class="why-dot"></div>
-      <div><h3>Private by Design</h3><p>All processing happens in your browser. Nothing is sent to our servers.</p></div>
-    </div>
-    <div class="why-card">
-      <div class="why-dot"></div>
-      <div><h3>Completely Free</h3><p>Every tool, every preset, every download — no hidden fees, no subscription.</p></div>
-    </div>
-    <div class="why-card">
-      <div class="why-dot"></div>
-      <div><h3>No Account Needed</h3><p>Open the page and start editing. Zero signup, zero friction.</p></div>
-    </div>
-    <div class="why-card">
-      <div class="why-dot"></div>
-      <div><h3>High Quality Output</h3><p>We use advanced canvas rendering to preserve sharpness and colour accuracy.</p></div>
-    </div>
-    <div class="why-card">
-      <div class="why-dot"></div>
-      <div><h3>Works on Any Device</h3><p>Fully responsive — use it on your phone, tablet, or desktop browser.</p></div>
-    </div>
-    <div class="why-card">
-      <div class="why-dot"></div>
-      <div><h3>Lightning Fast</h3><p>No server round-trips means your image is ready in seconds, not minutes.</p></div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-logo">Pixel Forge <span>Stack</span></div>
-  <div class="footer-links">
-    <a href="blog.html">Blog</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms-of-service.html">Terms of Service</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <p>© 2026 Pixel Forge Stack. All rights reserved.</p>
-</footer>
-
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', initTools);
+    </script>
 </body>
 </html>
