@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NW63QVR4');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Why Resizing an Image Can Make It Blurry (and How to Avoid It)</title>
+<meta name="description" content="Learn why resized images look blurry, why making a picture bigger causes soft results, and simple steps to keep your photos sharp when you change their size."/>
+<link rel="canonical" href="https://pixel-forge-stack.github.io/blog/why-resized-image-looks-blurry.html"/>
+<meta property="og:title" content="Why Resizing an Image Can Make It Blurry (and How to Avoid It)"/>
+<meta property="og:description" content="Learn why resized images look blurry, why making a picture bigger causes soft results, and simple steps to keep your photos sharp when you change their size."/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://pixel-forge-stack.github.io/blog/why-resized-image-looks-blurry.html"/>
+<meta property="og:image" content="https://pixel-forge-stack.github.io/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Why Resizing an Image Can Make It Blurry (and How to Avoid It)"/>
+<meta name="twitter:description" content="Learn why resized images look blurry, why making a picture bigger causes soft results, and simple steps to keep your photos sharp when you change their size."/>
+<meta name="twitter:image" content="https://pixel-forge-stack.github.io/og-image.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0F172A;--navy2:#1E293B;--cyan:#06B6D4;--cyan2:#0891B2;--white:#F8FAFC;--slate:#64748B;--light:#F1F5F9;--border:#E2E8F0;--radius:14px}
+body{font-family:'Inter',sans-serif;background:var(--white);color:var(--navy);line-height:1.75}
+nav{position:sticky;top:0;z-index:100;background:rgba(15,23,42,0.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(6,182,212,0.15);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-size:1.3rem;font-weight:800;color:var(--white);text-decoration:none;letter-spacing:-0.5px}
+.logo span{color:var(--cyan)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:#94A3B8;text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--cyan)}
+.breadcrumb{background:var(--light);border-bottom:1px solid var(--border);padding:10px 5%;font-size:.82rem;color:var(--slate)}
+.breadcrumb a{color:var(--cyan2);text-decoration:none}
+
+.article-header{max-width:760px;margin:0 auto;padding:56px 5% 0}
+.meta-line{color:var(--cyan2);font-size:.82rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;margin-bottom:14px}
+.article-header h1{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;letter-spacing:-.8px;line-height:1.2;margin-bottom:16px}
+.article-header .dek{font-size:1.05rem;color:var(--slate);max-width:640px}
+
+.article-wrap{max-width:760px;margin:0 auto;padding:36px 5% 0}
+.article-wrap h2{font-size:clamp(1.2rem,2.6vw,1.5rem);font-weight:800;letter-spacing:-.4px;margin:40px 0 14px}
+.article-wrap h3{font-size:1.02rem;font-weight:700;margin:24px 0 8px}
+.article-wrap p{font-size:1rem;color:#334155;margin-bottom:16px}
+.article-wrap ul,.article-wrap ol{margin:0 0 16px 22px;color:#334155;font-size:1rem}
+.article-wrap li{margin-bottom:7px}
+.article-wrap strong{color:var(--navy)}
+
+.callout{background:var(--light);border-left:4px solid var(--cyan);border-radius:8px;padding:16px 20px;margin:20px 0;font-size:.94rem;color:#374151}
+.callout strong{color:var(--cyan2)}
+
+.compare-table{width:100%;border-collapse:collapse;margin:16px 0 24px;font-size:.9rem}
+.compare-table th{background:var(--navy);color:#fff;padding:11px 13px;text-align:left;font-weight:700}
+.compare-table td{padding:11px 13px;border-bottom:1px solid var(--border);color:#374151}
+.compare-table tr:nth-child(even){background:var(--light)}
+
+.steps-list{counter-reset:step;list-style:none;margin:0 0 22px;padding:0}
+.steps-list li{counter-increment:step;position:relative;padding-left:42px;margin-bottom:16px;font-size:1rem;color:#334155}
+.steps-list li::before{content:counter(step);position:absolute;left:0;top:0;width:28px;height:28px;background:var(--cyan);color:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem}
+
+.tool-pills{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 24px}
+.tool-pill{background:var(--light);border:1px solid var(--border);border-radius:9px;padding:9px 15px;text-decoration:none;color:var(--cyan2);font-weight:600;font-size:.88rem;transition:all .2s}
+.tool-pill:hover{background:var(--cyan);color:#fff;border-color:var(--cyan)}
+
+.closing-cta{margin:44px 0 8px;padding-top:24px;border-top:1px solid var(--border)}
+.closing-cta h2{margin-top:0}
+.closing-cta p{color:#374151}
+.closing-cta a{color:var(--cyan2);font-weight:700;text-decoration:none}
+.closing-cta a:hover{text-decoration:underline}
+
+.faq-list{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+.faq-item{background:var(--light);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.faq-q{padding:15px 18px;font-weight:700;font-size:.94rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
+.faq-q:hover{color:var(--cyan2)}
+.faq-arrow{font-size:1.05rem;transition:transform .25s;color:var(--cyan)}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-a{display:none;padding:0 18px 15px;color:var(--slate);font-size:.9rem;line-height:1.7}
+.faq-item.open .faq-a{display:block}
+
+footer{background:var(--navy);color:#64748B;text-align:center;padding:36px 5%;margin-top:56px}
+footer .footer-logo{color:var(--white);font-weight:800;font-size:1.1rem;margin-bottom:14px}
+footer .footer-logo span{color:var(--cyan)}
+footer .footer-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+footer .footer-links a{color:#64748B;text-decoration:none;font-size:.85rem;transition:color .2s}
+footer .footer-links a:hover{color:var(--cyan)}
+footer p{font-size:.82rem}
+@media(max-width:600px){.nav-links{display:none}}
+</style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pixel-forge-stack.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://pixel-forge-stack.github.io/blog.html" },
+    { "@type": "ListItem", "position": 3, "name": "Why Resized Images Look Blurry", "item": "https://pixel-forge-stack.github.io/blog/why-resized-image-looks-blurry.html" }
+  ]
+}
+  </script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW63QVR4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<nav>
+  <a class="logo" href="/">Pixel Forge <span>Stack</span></a>
+  <ul class="nav-links">
+    <li><a href="/#tools">All Tools</a></li>
+    <li><a href="../blog.html">Blog</a></li>
+    <li><a href="../about.html">About</a></li>
+  </ul>
+</nav>
+
+<div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog.html">Blog</a> &rsaquo; Why Resized Images Look Blurry</div>
+
+<div class="article-header">
+  <div class="meta-line">Guide &middot; 6 min read</div>
+  <h1>Why Resizing an Image Can Make It Blurry (and How to Avoid It)</h1>
+  <p class="dek">What resolution and upscaling really do to your photo, and the simple habits that keep it sharp.</p>
+</div>
+
+<div class="article-wrap">
+
+  <p>You resize a photo and it comes out soft, grainy, or blocky. The picture looked fine before, so what went wrong? The answer almost always comes down to pixels, and once you understand them, blurry results become easy to avoid.</p>
+
+  <h2>What Resolution Really Means</h2>
+  <p>A digital image is a grid of tiny squares called pixels. An image that is 1200 pixels wide and 800 pixels tall holds 960,000 of them. Each pixel has one colour. When you look at the photo, your eyes blend all those squares into a smooth picture.</p>
+  <p>The number of pixels is the resolution. More pixels means more detail. Fewer pixels means less detail. When you resize an image, you change this number, and that is where blur can begin.</p>
+
+  <h2>Making an Image Smaller Rarely Causes Blur</h2>
+  <p>When you shrink an image, the software has to throw some pixels away and blend the rest. Good tools do this carefully, so the smaller picture still looks clean and sharp. This is why a huge phone photo looks fine when you reduce it for a website or a form.</p>
+  <p>The one thing to watch is text and thin lines. Very small sizes can make them look rough, so always preview the result before you download it.</p>
+
+  <h2>Making an Image Bigger Is the Real Problem</h2>
+  <p>When you enlarge an image, the software has to invent new pixels that were never in the original photo. It guesses their colour by looking at the pixels around them. The guesses are smooth, but they do not add real detail. The result looks soft, blocky, or blurry.</p>
+  <p>A 500 by 500 pixel picture stretched to 5000 by 5000 pixels does not become a high quality image. It is the same amount of information spread over a much larger area.</p>
+  <table class="compare-table">
+    <tr><th>Action</th><th>What Happens to Pixels</th><th>Risk of Blur</th></tr>
+    <tr><td>Make smaller</td><td>Extra pixels are removed and blended</td><td>Low</td></tr>
+    <tr><td>Keep the same size</td><td>Pixels stay as they are</td><td>None</td></tr>
+    <tr><td>Make bigger</td><td>New pixels are estimated from neighbours</td><td>High</td></tr>
+  </table>
+
+  <h2>Other Reasons an Image Looks Blurry</h2>
+  <p><strong>Stretching the width or height by itself.</strong> If you change one side and not the other, the picture gets squashed or stretched. Keep the aspect ratio locked unless you truly want a different shape.</p>
+  <p><strong>Saving again and again as JPG.</strong> JPG compression removes a little detail each time you save. After many saves, the photo looks muddy. Keep your original file and always start from it.</p>
+  <p><strong>Very low quality settings.</strong> Pushing the quality slider too low creates blocky patches. A moderate setting usually keeps the picture clean while cutting the file size.</p>
+  <p><strong>Starting with a small file.</strong> Images saved from chat apps or social media are often already reduced. They cannot be brought back to full sharpness.</p>
+
+  <h2>How to Keep Your Photos Sharp</h2>
+  <p>Follow these simple habits when you resize.</p>
+  <ol class="steps-list">
+    <li><strong>Start with the biggest original you have,</strong> not a copy that was sent through a messaging app.</li>
+    <li><strong>Scale down, not up.</strong> If you need a larger size, look for a better source image first.</li>
+    <li><strong>Lock the aspect ratio</strong> so the picture is never squashed or stretched.</li>
+    <li><strong>Pick the right format.</strong> Use PNG for logos and text, and JPG or WEBP for photos. Our <a href="/blog/jpg-vs-png-vs-webp-explained.html">format guide</a> explains the difference.</li>
+    <li><strong>Preview before you download,</strong> and zoom in to check edges and text.</li>
+  </ol>
+
+  <h2>Choosing the Right Size Before You Start</h2>
+  <p>Many blurry images come from picking the wrong target size. If a website shows your picture at 800 pixels wide, uploading a file that is 800 pixels wide is enough. On a sharp phone screen you may want about double that. Ready made pages such as <a href="/resize-image-1920x1080.html">1920 x 1080</a> or <a href="/resize-image-instagram.html">Instagram post size</a> help you pick a size that fits the place where the image will be used.</p>
+
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Why does my photo look blurry after I resize it? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Most often you made the image larger than the original. The tool has to guess the new pixels, and the result looks soft. Resizing to a smaller size usually stays sharp.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I make a small image sharp again? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Not really. A resize tool cannot bring back detail that was never captured. The best fix is to find a larger original.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Does a bigger file size mean a sharper image? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Not always. Sharpness depends on the number of real pixels and how the photo was taken. A large file can still be soft if it was stretched from a small image.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Should I save my resized image as PNG or JPG? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Use PNG for logos, screenshots, and text. Use JPG or WEBP for photos, because they give smaller files with very good quality.</div>
+    </div>
+  </div>
+
+  <div class="closing-cta">
+    <h2>Ready to Resize Without the Blur?</h2>
+    <p>All our tools run in your browser, free and private, with no signup needed.</p>
+    <div class="tool-pills">
+      <a href="/resize-image.html" class="tool-pill">✦ Resize Image</a>
+      <a href="/compress-image.html" class="tool-pill">✦ Compress Image</a>
+      <a href="/crop-image.html" class="tool-pill">✦ Crop Image</a>
+    </div>
+    <p><a href="/#tools">Browse All Tools →</a></p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo">Pixel Forge <span>Stack</span></div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="../blog.html">Blog</a>
+    <a href="../privacy-policy.html">Privacy Policy</a>
+    <a href="../terms-of-service.html">Terms of Service</a>
+    <a href="../about.html">About</a>
+    <a href="../contact.html">Contact</a>
+  </div>
+  <p>© 2026 Pixel Forge Stack. All rights reserved.</p>
+</footer>
+
+<script>function toggleFaq(el){el.parentElement.classList.toggle('open')}</script>
+</body>
+</html>
