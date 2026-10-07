@@ -11,8 +11,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crop Image Online for Free | Pixel Forge Stack</title>
-  <meta name="description" content="Crop any image online for free. Trim unwanted parts, crop to a square, circle, or custom size. No signup needed. Works on all devices. Fast and private." />
+  <title>Crop Image Online: Free-Form or Fixed Aspect Ratio | Pixel Forge Stack</title>
+  <meta name="description" content="Crop an image in your browser by dragging a selection or entering exact pixel coordinates, with 1:1, 4:3, 16:9 and other aspect-ratio locks." />
   <link rel="canonical" href="https://pixel-forge-stack.github.io/crop-image.html" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -20,15 +20,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Pixel Forge Stack" />
-  <meta property="og:title" content="Crop Image Online for Free | Pixel Forge Stack" />
-  <meta property="og:description" content="Crop any image online for free. Trim unwanted parts, crop to a square, circle, or custom size. No signup needed. Works on all devices. Fast and private." />
+  <meta property="og:title" content="Crop Image Online: Free-Form or Fixed Aspect Ratio | Pixel Forge Stack" />
+  <meta property="og:description" content="Crop an image in your browser by dragging a selection or entering exact pixel coordinates, with 1:1, 4:3, 16:9 and other aspect-ratio locks." />
   <meta property="og:url" content="https://pixel-forge-stack.github.io/crop-image.html" />
   <meta property="og:image" content="https://pixel-forge-stack.github.io/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Crop Image Online for Free | Pixel Forge Stack" />
-  <meta name="twitter:description" content="Crop any image online for free. Trim unwanted parts, crop to a square, circle, or custom size. No signup needed. Works on all devices. Fast and private." />
+  <meta name="twitter:title" content="Crop Image Online: Free-Form or Fixed Aspect Ratio | Pixel Forge Stack" />
+  <meta name="twitter:description" content="Crop an image in your browser by dragging a selection or entering exact pixel coordinates, with 1:1, 4:3, 16:9 and other aspect-ratio locks." />
   <meta name="twitter:image" content="https://pixel-forge-stack.github.io/og-image.png" />
   <script type="application/ld+json">
 {
@@ -37,8 +37,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "name": "Crop Image Online for Free",
   "url": "https://pixel-forge-stack.github.io/crop-image.html",
   "applicationCategory": "MultimediaApplication",
-  "operatingSystem": "Any (runs in browser)",
-  "description": "Crop any image online for free. Trim unwanted parts, crop to a square, circle, or custom size. No signup needed. Works on all devices. Fast and private.",
+  "operatingSystem": "Web browser",
+  "description": "Crop an image by dragging a selection or entering pixel coordinates, with aspect-ratio locks. Runs in your browser.",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -53,66 +53,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is the crop tool really free?",
+      "name": "What is the difference between cropping and resizing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, completely free. There is no paid version, no subscription, and no limit on how many images you can crop. All features are available to everyone at no cost."
+        "text": "Cropping removes part of the picture and keeps the pixels that remain at their original size. Resizing keeps the whole picture and changes how many pixels it has. A cropped image is smaller in dimensions only because pixels were cut away."
       }
     },
     {
       "@type": "Question",
-      "name": "Does cropping reduce the image quality?",
+      "name": "Does cropping reduce the quality?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cropping itself does not reduce image quality. When you crop an image, you are simply removing pixels from the edges. The pixels that remain are exactly the same as in the original image. However, if you save as JPG, there is a very small amount of compression applied. To avoid any quality loss at all, save your cropped image as PNG."
+        "text": "Not by itself. The kept area keeps its original pixel detail. Saving as JPG or WebP applies compression, so choose PNG if you want to avoid that."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I crop a photo to a circle or oval shape?",
+      "name": "How do I crop to an exact size?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our current tool crops images to rectangular shapes. For a circular crop, we suggest cropping to a square first using the 1:1 ratio, then using CSS border-radius in your code or design to display it as a circle. We are working on adding a circular crop option in a future update."
+        "text": "Use the manual coordinates (X, Y, width and height in pixels) to define the area. To end up with a specific final size, crop to the right ratio and then use Resize Image."
       }
     },
     {
       "@type": "Question",
-      "name": "Is my image uploaded to a server when I crop it here?",
+      "name": "Will cropping make the file smaller?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Your image is never uploaded anywhere. The entire cropping process happens inside your browser on your own device using JavaScript. This means your image stays private and secure, no one else can see or access it."
+        "text": "Often, because fewer pixels are saved. The exact change depends on the content and format. For a specific file-size target, see Compress Image."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I crop to an exact size in pixels?",
+      "name": "Why is the background black when I save a transparent PNG as JPG?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Use the manual crop coordinate inputs (X, Y, Width, Height) to set an exact crop area in pixels. This is perfect for situations where you need a very specific output size, such as passport photos or product images."
+        "text": "JPG cannot store transparency, and this tool does not add a background colour. Choose PNG or WebP to keep transparency."
       }
     },
     {
       "@type": "Question",
-      "name": "What file formats can I upload and download?",
+      "name": "Does the original file change?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can upload JPG, PNG, WEBP, GIF, and BMP files. You can download the cropped result as JPG, PNG, or WEBP. PNG is recommended for the highest quality output since it is lossless."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does this work on a mobile phone?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Pixel Forge Stack works on any modern smartphone or tablet. You can upload images from your phone's gallery and use touch gestures to draw your crop area. The tool is fully responsive and designed to work on all screen sizes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I undo a crop?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, within the tool you can simply redraw the selection area before downloading. If you have already downloaded the cropped image, you cannot undo that, which is why we recommend keeping a backup of your original image. Your original file on your computer is never modified by our tool."
+        "text": "No. The tool saves a new file and leaves your original untouched."
       }
     }
   ]
@@ -367,7 +351,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="hero">
   <div class="hero-badge">Free · No Login · No Watermark</div>
   <h1>Crop Image <span>Online for Free</span></h1>
-  <p>Remove unwanted parts from any image. Drag to select the area you want to keep, choose an aspect ratio, and download your cropped image instantly.</p>
+  <p>Drag to select the area you want to keep, choose an aspect ratio or enter exact pixel coordinates, and download the cropped image. The crop runs in your browser.</p>
 
   <div class="tool-box">
 
@@ -378,7 +362,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
       </div>
       <h3>Drop your image here</h3>
-      <p>Supports JPG, PNG, WEBP, GIF, BMP · Max 50MB</p>
+      <p>Supports JPG, PNG, WebP, GIF and BMP files</p>
       <button class="btn-choose" onclick="document.getElementById('fileInput').click()">Choose Image</button>
     </div>
 
@@ -444,239 +428,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- LONG CONTENT -->
 <div class="content-wrap">
 
-  <!-- How to use -->
-  <div class="section-block">
-    <div class="section-label">Getting Started</div>
-    <h2>How to Crop an Image, Step by Step</h2>
-    <p>Cropping an image is one of the most basic and useful things you can do in photo editing. It simply means cutting out a part of the image and keeping only what you want. With Pixel Forge Stack, you can crop any image for free, right in your browser, without installing any software or creating an account.</p>
-    <p>Here is how to do it in just a few simple steps:</p>
-    <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-num">1</div>
-        <h3>Upload Your Image</h3>
-        <p>Click "Choose Image" or drag and drop your photo into the upload box. We support JPG, PNG, WEBP, GIF, and BMP files.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">2</div>
-        <h3>Draw Your Crop Area</h3>
-        <p>Click and drag directly on the image to draw a selection box around the area you want to keep. You will see the rest of the image get darkened.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">3</div>
-        <h3>Choose an Aspect Ratio</h3>
-        <p>If you need a specific shape like a square or 16:9, click one of the ratio buttons and the crop box will automatically adjust to that ratio.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">4</div>
-        <h3>Download Your Image</h3>
-        <p>Click the download button and your cropped image will save directly to your device. No watermarks, no account needed.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- What is cropping -->
   <div class="section-block">
     <div class="section-label">The Basics</div>
-    <h2>What Does It Mean to Crop an Image?</h2>
-    <p>Cropping means removing the outer parts of an image to focus on what matters. Think of it like taking a pair of scissors to a printed photo and cutting away the edges you do not want. When you crop a digital image, you are selecting a rectangular area to keep and everything outside that area gets removed.</p>
-    <p>Cropping is one of the most powerful and commonly used tools in photography and design. A good crop can completely change the feel of a photo. It can remove distracting backgrounds, bring the subject closer, change the shape of the image, or make it fit perfectly in a specific space like an Instagram post or a website banner.</p>
-    <p>With Pixel Forge Stack, cropping is done entirely inside your browser. Your image is loaded onto a canvas on your screen, you select the area you want to keep, and the tool cuts it for you. The entire process happens on your own device, which means your image is completely private and never gets sent to any server.</p>
+    <h2>Cropping Removes Pixels, Resizing Rescales Them</h2>
+    <p>To crop is to cut away the outer parts of a picture so that only a chosen rectangle remains. The pixels inside that rectangle are not rescaled: a 600 × 400 crop of a 4000 × 3000 photo is a 600 × 400 image with the original detail.</p>
+    <p>Resizing is different. It keeps the whole picture and changes its pixel dimensions, which is what <a href="resize-image.html">Resize Image</a> does. Often you want both: crop to the composition and ratio you want, then resize to the dimensions you need.</p>
+    
   </div>
 
-  <!-- Why crop -->
   <div class="section-block">
-    <div class="section-label">Common Reasons</div>
-    <h2>Why Do People Crop Images?</h2>
-    <p>There are many everyday situations where you might need to crop a photo. Here are the most common ones:</p>
-    <div class="use-cases-grid">
-      <div class="use-card">
-        <div class="use-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
-        <div>
-          <h3>Remove Unwanted Background</h3>
-          <p>If there is something distracting in the background of your photo, cropping it out is the quickest fix. No editing skills needed.</p>
-        </div>
-      </div>
-      <div class="use-card">
-        <div class="use-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-        <div>
-          <h3>Profile Pictures</h3>
-          <p>Most social media profile pictures need to be square. Crop your photo to a perfect 1:1 ratio so it looks great on any platform.</p>
-        </div>
-      </div>
-      <div class="use-card">
-        <div class="use-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-        <div>
-          <h3>Social Media Content</h3>
-          <p>Instagram, Facebook, Twitter, and LinkedIn all have different recommended image sizes. Crop your image to the right ratio for each platform.</p>
-        </div>
-      </div>
-      <div class="use-card">
-        <div class="use-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-        <div>
-          <h3>Passport &amp; ID Photos</h3>
-          <p>Passport and visa application photos need to be cropped to very specific dimensions. Our manual crop coordinate input makes this precise and easy.</p>
-        </div>
-      </div>
-      <div class="use-card">
-        <div class="use-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
-        <div>
-          <h3>Product Photos for Online Stores</h3>
-          <p>E-commerce product images usually need to be square or a specific ratio. Crop your product photos to make them look professional and consistent.</p>
-        </div>
-      </div>
-      <div class="use-card">
-        <div class="use-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
-        <div>
-          <h3>Better Composition</h3>
-          <p>Sometimes a photo is great but the subject is off-centre. Cropping lets you reframe the shot and apply composition rules like the rule of thirds.</p>
-        </div>
-      </div>
-    </div>
+    <div class="section-label">Composition</div>
+    <h2>Why Crop?</h2>
+    <strong>Remove distractions.</strong> Cut away edges, bystanders or clutter that draw attention from the subject.<strong>Improve composition.</strong> Moving the subject off-centre, cutting closer or leaving space on one side can change how a picture feels. Cropping tight on a small subject also magnifies flaws, so it works best when the original has plenty of pixels.<strong>Change the shape.</strong> Portrait, landscape and square frames suit different uses. Cropping lets you choose the shape instead of stretching the picture into it.
   </div>
 
-  <!-- Aspect ratios explained -->
   <div class="section-block">
-    <div class="section-label">Ratios Explained</div>
-    <h2>What Are Aspect Ratios and Which One Should You Use?</h2>
-    <p>An aspect ratio is simply the relationship between the width and height of an image. For example, a 1:1 ratio means the image is a perfect square, the width and height are equal. A 16:9 ratio means the image is much wider than it is tall, like a widescreen TV or YouTube video.</p>
-    <p>Choosing the right aspect ratio depends on where you are going to use the image. Here is a quick guide to help you choose:</p>
-    <div class="ratio-explain-grid">
-      <div class="ratio-card">
-        <h4>Free (Custom)</h4>
-        <p>Draw any crop shape you want. No restrictions. Best for creative or unique crops.</p>
-      </div>
-      <div class="ratio-card">
-        <h4>1:1 (Square)</h4>
-        <p>Perfect for Instagram posts, profile pictures, and any platform that displays square images.</p>
-      </div>
-      <div class="ratio-card">
-        <h4>4:3</h4>
-        <p>The classic photo ratio used by many cameras. Good for general photography and presentations.</p>
-      </div>
-      <div class="ratio-card">
-        <h4>16:9</h4>
-        <p>Widescreen ratio. Used for YouTube thumbnails, desktop wallpapers, and website banners.</p>
-      </div>
-      <div class="ratio-card">
-        <h4>9:16</h4>
-        <p>Vertical ratio. Perfect for Instagram Stories, TikTok videos, and mobile-first content.</p>
-      </div>
-      <div class="ratio-card">
-        <h4>3:2</h4>
-        <p>Standard DSLR camera ratio. Good for printing 6×4 inch photos and photo albums.</p>
-      </div>
-      <div class="ratio-card">
-        <h4>2:3</h4>
-        <p>Portrait version of 3:2. Good for portrait photos and Pinterest images.</p>
-      </div>
-      <div class="ratio-card">
-        <h4>5:4</h4>
-        <p>Used for 8×10 inch prints and some older monitor sizes. Good for print photography.</p>
-      </div>
-    </div>
+    <div class="section-label">Aspect Ratio</div>
+    <h2>Choosing a Ratio</h2>
+    <p>The ratio buttons lock the shape of the selection: 1:1 (square), 4:3, 3:2, 5:4, 16:9 (widescreen), and the portrait versions 9:16 and 2:3. "Free" lets you drag any rectangle.</p>
+    <p>Platforms often prefer particular shapes, for example square profile pictures, wide banners or tall vertical video. Their exact recommendations change over time, so check the platform's current guidance. Crop first, then resize to a specific size with tools such as <a href="resize-image-instagram.html">Instagram</a>, <a href="youtube-thumbnail.html">YouTube thumbnail</a> or <a href="resize-image-linkedin-banner.html">LinkedIn banner</a>. If you would rather keep the whole picture and add space, use <a href="change-aspect-ratio.html">Change Aspect Ratio</a>.</p>
+    
   </div>
 
-  <!-- Tips -->
   <div class="section-block">
-    <div class="section-label">Pro Tips</div>
-    <h2>Tips for Cropping Images Like a Pro</h2>
-    <p>Here are some useful tips that will help you get the best results when cropping your images:</p>
-    <div class="tips-list">
-      <div class="tip-item">
-        <div class="tip-dot"></div>
-        <p><strong>Use the rule of thirds.</strong> When cropping a photo, imagine the image divided into nine equal boxes by two horizontal and two vertical lines. Try to place the main subject at one of the four points where those lines intersect. This creates a more visually interesting composition than simply centring the subject.</p>
-      </div>
-      <div class="tip-item">
-        <div class="tip-dot"></div>
-        <p><strong>Do not crop too tight around the subject.</strong> Leaving a little bit of space around the edges makes the image feel more natural and comfortable to look at. Cropping too close can make the image feel cramped or cut off.</p>
-      </div>
-      <div class="tip-item">
-        <div class="tip-dot"></div>
-        <p><strong>Think about where the image will be used before cropping.</strong> If you are cropping a photo for Instagram, use 1:1 for posts or 9:16 for stories. If it is for a YouTube thumbnail, use 16:9. Cropping to the right ratio from the start saves you time later.</p>
-      </div>
-      <div class="tip-item">
-        <div class="tip-dot"></div>
-        <p><strong>Use manual coordinates for pixel-perfect crops.</strong> If you need to crop to exact pixel dimensions, use the X, Y, Width, and Height input fields. This is especially useful for passport photos or product images that require very specific sizes.</p>
-      </div>
-      <div class="tip-item">
-        <div class="tip-dot"></div>
-        <p><strong>Keep the original image.</strong> Our tool processes everything in your browser and does not modify your original file, but it is always a good habit to keep a backup of the original high-resolution image before cropping. Once you crop and save, you cannot get back the removed parts from the downloaded file.</p>
-      </div>
-      <div class="tip-item">
-        <div class="tip-dot"></div>
-        <p><strong>Save as PNG if quality is critical.</strong> If you need the highest possible quality for your cropped image, choose PNG as the output format. PNG is lossless, meaning no quality is lost during saving. This is especially important for logos, text images, or anything where sharpness is critical.</p>
-      </div>
-    </div>
+    <div class="section-label">How It Works</div>
+    <h2>Using the Crop Tool</h2>
+    <p>Open an image, drag on it to select an area, adjust the corner handles, or type exact X, Y, width and height values in pixels. Choose JPG, PNG or WebP and download. The crop is saved at the original pixel resolution, and your file is not changed.</p>
+    <p>The tool crops one image at a time. When saving as JPG, transparent areas are not given a background colour, so pick PNG or WebP for transparent images.</p>
+    
   </div>
 
-  <!-- Why Pixel Forge Stack -->
-  <div class="section-block">
-    <div class="section-label">Why Choose Us</div>
-    <h2>Why Use Pixel Forge Stack to Crop Images?</h2>
-    <p>Cropping tools are everywhere on the internet, but most of them come with annoying limitations. They make you sign up before you can use them. They put a watermark on your image. They upload your photo to a server, which means your private images are being processed on someone else's computer. Some tools even limit how many images you can crop per day unless you pay for a subscription.</p>
-    <p>Pixel Forge Stack is different. Here is why:</p>
-    <p><strong>Everything stays on your device.</strong> When you upload an image to Pixel Forge Stack, it never actually leaves your computer. The image is loaded into your browser using JavaScript, displayed on a canvas element, and processed entirely on your device. No data is sent to any server. This means your photos are completely private, no matter what is in them.</p>
-    <p><strong>No limits, no subscriptions, no accounts.</strong> You can crop as many images as you want, as many times as you want, completely for free. There is no daily limit. There is no premium tier. Every feature you see is available to everyone.</p>
-    <p><strong>Clean downloads, no watermarks.</strong> The image you download is exactly what you cropped. We do not stamp our logo on it. We do not add any text or overlay. The result is a clean, professional image that is entirely yours.</p>
-    <p><strong>Works on any device, any browser.</strong> Whether you are on Windows, macOS, Linux, Android, or iOS, Pixel Forge Stack works right in your browser. You do not need to install anything. Just open the website and start cropping.</p>
-    <p><strong>Multiple ways to crop.</strong> You can draw the crop area with your mouse, use the aspect ratio buttons to lock the shape, or type exact pixel coordinates manually. This flexibility makes the tool useful for beginners and professionals alike.</p>
-  </div>
-
-  <!-- FAQ -->
   <div class="section-block">
     <div class="section-label">Common Questions</div>
     <h2>Frequently Asked Questions</h2>
     <div class="faq-list">
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Is the crop tool really free? <span class="faq-arrow">▾</span></div>
-        <div class="faq-a">Yes, completely free. There is no paid version, no subscription, and no limit on how many images you can crop. All features are available to everyone at no cost.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Does cropping reduce the image quality? <span class="faq-arrow">▾</span></div>
-        <div class="faq-a">Cropping itself does not reduce image quality. When you crop an image, you are simply removing pixels from the edges. The pixels that remain are exactly the same as in the original image. However, if you save as JPG, there is a very small amount of compression applied. To avoid any quality loss at all, save your cropped image as PNG.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Can I crop a photo to a circle or oval shape? <span class="faq-arrow">▾</span></div>
-        <div class="faq-a">Our current tool crops images to rectangular shapes. For a circular crop, we suggest cropping to a square first using the 1:1 ratio, then using CSS border-radius in your code or design to display it as a circle. We are working on adding a circular crop option in a future update.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Is my image uploaded to a server when I crop it here? <span class="faq-arrow">▾</span></div>
-        <div class="faq-a">No. Your image is never uploaded anywhere. The entire cropping process happens inside your browser on your own device using JavaScript. This means your image stays private and secure, no one else can see or access it.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Can I crop to an exact size in pixels? <span class="faq-arrow">▾</span></div>
-        <div class="faq-a">Yes. Use the manual crop coordinate inputs (X, Y, Width, Height) to set an exact crop area in pixels. This is perfect for situations where you need a very specific output size, such as passport photos or product images.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">What file formats can I upload and download? <span class="faq-arrow">▾</span></div>
-        <div class="faq-a">You can upload JPG, PNG, WEBP, GIF, and BMP files. You can download the cropped result as JPG, PNG, or WEBP. PNG is recommended for the highest quality output since it is lossless.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Does this work on a mobile phone? <span class="faq-arrow">▾</span></div>
-        <div class="faq-a">Yes. Pixel Forge Stack works on any modern smartphone or tablet. You can upload images from your phone's gallery and use touch gestures to draw your crop area. The tool is fully responsive and designed to work on all screen sizes.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Can I undo a crop? <span class="faq-arrow">▾</span></div>
-        <div class="faq-a">Yes, within the tool you can simply redraw the selection area before downloading. If you have already downloaded the cropped image, you cannot undo that, which is why we recommend keeping a backup of your original image. Your original file on your computer is never modified by our tool.</div>
-      </div>
-
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the difference between cropping and resizing? <span class="faq-arrow">▾</span></div><div class="faq-a">Cropping removes part of the picture and keeps the pixels that remain at their original size. Resizing keeps the whole picture and changes how many pixels it has. A cropped image is smaller in dimensions only because pixels were cut away.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does cropping reduce the quality? <span class="faq-arrow">▾</span></div><div class="faq-a">Not by itself. The kept area keeps its original pixel detail. Saving as JPG or WebP applies compression, so choose PNG if you want to avoid that.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How do I crop to an exact size? <span class="faq-arrow">▾</span></div><div class="faq-a">Use the manual coordinates (X, Y, width and height in pixels) to define the area. To end up with a specific final size, crop to the right ratio and then use Resize Image.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Will cropping make the file smaller? <span class="faq-arrow">▾</span></div><div class="faq-a">Often, because fewer pixels are saved. The exact change depends on the content and format. For a specific file-size target, see Compress Image.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why is the background black when I save a transparent PNG as JPG? <span class="faq-arrow">▾</span></div><div class="faq-a">JPG cannot store transparency, and this tool does not add a background colour. Choose PNG or WebP to keep transparency.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does the original file change? <span class="faq-arrow">▾</span></div><div class="faq-a">No. The tool saves a new file and leaves your original untouched.</div></div>
     </div>
   </div>
 
 </div>
 
-<!-- RELATED TOOLS -->
 <section class="related-section">
-  <h2>More Free Image Tools</h2>
-  <p>Everything you need to edit your images, all in one place and all completely free.</p>
+  <h2>More Image Tools</h2>
+  
   <div class="related-grid">
     <a href="resize-image.html" class="related-card">
       <div class="r-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
@@ -691,7 +490,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="image-to-pdf.html" class="related-card">
       <div class="r-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
       <h3>Image to PDF</h3>
-      <p>Convert images to PDF instantly</p>
+      <p>Combine images into a PDF</p>
     </a>
     <a href="rotate-flip.html" class="related-card">
       <div class="r-icon"><svg viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg></div>

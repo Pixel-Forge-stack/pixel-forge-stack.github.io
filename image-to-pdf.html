@@ -11,8 +11,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Image to PDF Online for Free | Pixel Forge Stack</title>
-  <meta name="description" content="Convert JPG, PNG, or WEBP images to PDF online for free. No signup needed. Multiple images to one PDF. Works in your browser. your images stay private." />
+  <title>Image to PDF Converter: Combine Images into One PDF | Pixel Forge Stack</title>
+  <meta name="description" content="Combine one or more images into a single PDF with A4, Letter, A3 or fit-to-image pages. Runs in your browser; each image becomes one page." />
   <link rel="canonical" href="https://pixel-forge-stack.github.io/image-to-pdf.html" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -20,15 +20,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Pixel Forge Stack" />
-  <meta property="og:title" content="Image to PDF Online for Free | Pixel Forge Stack" />
-  <meta property="og:description" content="Convert JPG, PNG, or WEBP images to PDF online for free. No signup needed. Multiple images to one PDF. Works in your browser. your images stay private." />
+  <meta property="og:title" content="Image to PDF Converter: Combine Images into One PDF | Pixel Forge Stack" />
+  <meta property="og:description" content="Combine one or more images into a single PDF with A4, Letter, A3 or fit-to-image pages. Runs in your browser; each image becomes one page." />
   <meta property="og:url" content="https://pixel-forge-stack.github.io/image-to-pdf.html" />
   <meta property="og:image" content="https://pixel-forge-stack.github.io/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Image to PDF Online for Free | Pixel Forge Stack" />
-  <meta name="twitter:description" content="Convert JPG, PNG, or WEBP images to PDF online for free. No signup needed. Multiple images to one PDF. Works in your browser. your images stay private." />
+  <meta name="twitter:title" content="Image to PDF Converter: Combine Images into One PDF | Pixel Forge Stack" />
+  <meta name="twitter:description" content="Combine one or more images into a single PDF with A4, Letter, A3 or fit-to-image pages. Runs in your browser; each image becomes one page." />
   <meta name="twitter:image" content="https://pixel-forge-stack.github.io/og-image.png" />
   <script type="application/ld+json">
 {
@@ -37,8 +37,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "name": "Image to PDF Online for Free",
   "url": "https://pixel-forge-stack.github.io/image-to-pdf.html",
   "applicationCategory": "MultimediaApplication",
-  "operatingSystem": "Any (runs in browser)",
-  "description": "Convert JPG, PNG, or WEBP images to PDF online for free. No signup needed. Multiple images to one PDF. Works in your browser. your images stay private.",
+  "operatingSystem": "Web browser",
+  "description": "Combine one or more images into a single PDF with A4, Letter, A3 or fit-to-image pages. Runs in your browser.",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -53,90 +53,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Can I convert multiple images to one PDF?",
+      "name": "Can I change the order of the pages?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. You can upload as many images as you want and they will all be combined into a single PDF file. Each image will appear on its own page in the PDF, in the order you uploaded them."
+        "text": "Pages follow the order in which the images were added. There is no drag-and-drop reordering. To change the order, remove an image with the \u2715 button and add it again, or clear everything and add the files in the order you want."
       }
     },
     {
       "@type": "Question",
-      "name": "Is my image uploaded to a server?",
+      "name": "Is the image quality kept inside the PDF?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Your images never leave your device. The PDF is generated entirely inside your browser using JavaScript. This makes the process completely private and secure."
+        "text": "Each image is drawn onto a canvas and saved into the PDF as a JPEG at 92% quality, so photos stay close to the original but are not stored byte for byte. Transparent areas of a PNG are not preserved and can turn black."
       }
     },
     {
       "@type": "Question",
-      "name": "What image formats are supported?",
+      "name": "Which page size should I choose?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can upload JPG, PNG, and WEBP images. All of these will be embedded correctly in the output PDF file."
+        "text": "Choose A4 or Letter if the PDF will be printed or if a portal asks for a standard page. Choose A3 for larger sheets. Choose Fit to Image when the PDF is only meant to be viewed on a screen and each page should match its image exactly."
       }
     },
     {
       "@type": "Question",
-      "name": "What page size should I choose?",
+      "name": "Why is there empty space around my landscape photo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For most documents and printing, A4 is the best choice as it is the standard paper size in most countries. If you are in the United States, Letter is the standard. If you want the PDF page to be exactly the same size as your image, choose \"Fit to Image\"."
+        "text": "A4, Letter and A3 pages are portrait. With \"Fit (keep aspect ratio)\" a landscape image is scaled to the page width, which leaves blank space above and below. Use \"Fit to Image\" if you want a page that matches the image, or rotate the photo first."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I reorder the images before converting?",
+      "name": "Why is my PDF so large?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The images are placed in the PDF in the order they were uploaded. To change the order, simply remove an image using the X button and re-upload it in the position you want it to appear."
+        "text": "File size depends on how many pixels the images contain. Large phone photos produce large PDFs. Resize or compress the images before converting, or use fewer photos per file."
       }
     },
     {
       "@type": "Question",
-      "name": "Will converting to PDF reduce my image quality?",
+      "name": "Is there a limit on the number of images?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. The image is embedded at its original resolution with no recompression. The only side effect is that the PDF file can be somewhat larger than the original image, since PDF adds its own structural data on top of the embedded picture."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to install anything or create an account?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. The tool works entirely in your browser with no signup, no software installation, and no watermark added to your output file."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I convert a single image to PDF, or does it only work with multiple images?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Both. Uploading just one image produces a single-page PDF; uploading several produces a multi-page PDF with one image per page."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why do some portals reject my photo but accept a PDF of the same photo?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many upload systems are configured to only accept document formats like PDF, DOC, or PDF/A, specifically to keep submissions consistent and predictable across devices, viewers, and printers. Wrapping the exact same photo in a PDF container is usually all it takes to satisfy that requirement."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does the orientation of my photo matter?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The tool detects and preserves each image's natural orientation on its page. If a photo looks sideways in the finished PDF, it typically means the original photo file itself was saved with rotated orientation metadata, which is worth checking before converting."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there a limit to how many images I can combine?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "There's no fixed limit on the number of images; the only practical constraint is your device's available memory when working with very large or very high-resolution files."
+        "text": "The tool does not set a limit, but everything is processed in your browser, so very many large images can be slow or run out of memory on a phone or older computer."
       }
     }
   ]
@@ -238,13 +198,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="hero">
   <div class="hero-badge">Free · No Login · No Watermark</div>
   <h1>Image to PDF <span>Online for Free</span></h1>
-  <p>Convert one or multiple images to a single PDF file instantly. JPG, PNG, WEBP, all supported. No signup. Your files never leave your device.</p>
+  <p>Combine one or more images into a single PDF, one image per page. The PDF is created in your browser and your images are not uploaded to our servers.</p>
   <div class="tool-box">
     <div class="upload-zone" id="uploadZone">
       <input type="file" id="fileInput" accept="image/*" multiple />
       <div class="upload-icon"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
       <h3>Drop images here</h3>
-      <p>Add one or multiple images · JPG, PNG, WEBP · Max 50MB each</p>
+      <p>Add one or more images · JPG, PNG, WebP and other browser-readable formats</p>
       <button class="btn-choose" onclick="document.getElementById('fileInput').click()">Choose Images</button>
     </div>
     <div id="ctrlPanel">
@@ -268,94 +228,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <div class="content-wrap">
+
   <div class="section-block">
     <div class="section-label">How It Works</div>
     <h2>Convert Images to PDF, Step by Step</h2>
-    <p>Converting your images to PDF with Pixel Forge Stack is fast, free, and completely private. You can convert a single image or combine multiple images into one PDF document. Everything is processed in your browser, nothing is sent to any server.</p>
+    <p>Add one or more images, choose a page size and fit, and download a single PDF with one image per page. The PDF is built in your browser using the jsPDF library, which is loaded from a public CDN when the page opens. Your images are not sent to it.</p>
     <div class="steps-grid">
-      <div class="step-card"><div class="step-num">1</div><h3>Upload Images</h3><p>Click "Choose Images" or drag and drop one or more photos. You can add JPG, PNG, and WEBP files. The images will appear as thumbnails.</p></div>
-      <div class="step-card"><div class="step-num">2</div><h3>Choose Page Size</h3><p>Select A4, Letter, or A3 for standard page sizes. Or choose "Fit to Image" to make each PDF page the exact size of the image.</p></div>
-      <div class="step-card"><div class="step-num">3</div><h3>Set Image Fit</h3><p>Choose whether images should be scaled to fit the page while keeping their proportions, or stretched to fill the entire page.</p></div>
-      <div class="step-card"><div class="step-num">4</div><h3>Download PDF</h3><p>Click the download button. Your PDF will be generated and saved directly to your device in seconds. One PDF with all your images.</p></div>
+      <div class="step-card"><div class="step-num">1</div><h3>Add images</h3><p>Choose files or drag them in. Any image format your browser can open works, such as JPG, PNG or WebP. Thumbnails appear in the order they will be placed in the PDF.</p></div>
+      <div class="step-card"><div class="step-num">2</div><h3>Pick a page size</h3><p>A4, Letter or A3 for standard pages, or Fit to Image to make each page the size of its image.</p></div>
+      <div class="step-card"><div class="step-num">3</div><h3>Set the image fit</h3><p>Fit keeps the proportions. Fill stretches the image to cover the page.</p></div>
+      <div class="step-card"><div class="step-num">4</div><h3>Download</h3><p>The PDF is saved to your device with every image on its own page.</p></div>
     </div>
   </div>
 
   <div class="section-block">
-    <div class="section-label">Under the Hood</div>
-    <h2>What Happens When You Convert an Image to PDF?</h2>
-    <p>A PDF isn't really a different "version" of your photo the way a PNG or JPG conversion is, it's a container. When you convert an image to PDF, the original picture is embedded onto a page exactly as it looked, and that page is wrapped in the PDF format, which every operating system, browser, and printer already knows how to open, display, and print consistently. Nothing about the pixels in your photo changes; what changes is how the file behaves once it leaves your hands.</p>
-    <p>This distinction matters more than it seems. A raw JPG or PNG opens differently depending on the app and device, sometimes it opens in a photo viewer, sometimes it downloads instead of previewing, sometimes it gets auto-rotated incorrectly. A PDF opens the same predictable way everywhere: as a document, page by page, in the order you set, with the layout locked in.</p>
-  </div>
-
-  <div class="section-block">
-    <div class="section-label">Why Convert</div>
-    <h2>Why People Actually Convert Images to PDF</h2>
-    <h3>Sending Multiple Photos as One Organized File</h3>
-    <p>If you have five, ten, or twenty photos of a document, a whiteboard, receipts, or handwritten notes, sending them as separate image files means the recipient has to open each one individually and guess the correct order. Combining them into a single PDF turns a scattered folder of images into one file that opens in the right sequence, page after page.</p>
-    <h3>Meeting Official Submission Requirements</h3>
-    <p>Government portals, university admissions, visa applications, tax filing systems, and job application forms overwhelmingly ask for documents "in PDF format," even when what you actually have is a photo taken on your phone. Converting that photo to PDF is often the only thing standing between you and a valid submission, no photo editing or scanning hardware required.</p>
-    <h3>Looking More Professional</h3>
-    <p>A stack of five loose JPGs in an email attachment reads as casual. The same five images combined into a single, properly ordered PDF reads as a prepared document. This matters for portfolios, project submissions, proposals, and anything you're sending to someone who will judge the presentation, not just the content.</p>
-    <h3>Preventing Accidental Edits and Reordering</h3>
-    <p>Unlike a folder of images, which anyone can rename, reorder, delete, or accidentally overwrite, a PDF locks the page order and content in place. What you send is what the recipient sees, in the sequence you intended.</p>
-    <h3>Avoiding Compression Damage from Messaging Apps</h3>
-    <p>WhatsApp, and similar chat apps compress photos automatically before sending, sometimes noticeably softening text and fine detail in scanned documents. Sending the same content as a PDF generally preserves the image at a more consistent quality, since it's treated as a document rather than a casual photo share.</p>
-    <h3>Printing Multi-Page Documents Correctly</h3>
-    <p>Printing five separate image files usually means opening each one, checking the print dialog each time, and hoping the printer applies consistent sizing across all of them. A single PDF sends the entire set to a printer as one coherent print job with consistent page size and margins throughout.</p>
-  </div>
-
-  <div class="section-block">
     <div class="section-label">Settings Explained</div>
-    <h2>Page Size, Orientation, and Fit, What They Actually Control</h2>
-    <h3>Page size (A4, Letter, A3, or Fit to Image)</h3>
-    <p>A4 and Letter are the two dominant paper standards worldwide, A4 in most countries, Letter mainly in the United States and parts of North America. Choosing the matching standard ensures the PDF prints cleanly on whatever paper size the recipient's printer is loaded with. "Fit to Image" skips the standard page dimensions entirely and makes each PDF page exactly the size of the image itself, useful when the file will only ever be viewed on a screen and never printed, since it avoids any blank margin or letterboxing around the picture.</p>
-    <h3>Image fit (Fit vs Fill)</h3>
-    <p>"Fit" scales the image down or up while preserving its original proportions, so nothing gets stretched or distorted, this can leave a thin margin of empty space on two sides if the image's aspect ratio doesn't exactly match the page. "Fill" stretches the image to cover the entire page edge-to-edge, which eliminates empty margins but will distort the image slightly if its proportions don't match the page's proportions exactly. For documents, receipts, and anything with text, "Fit" is almost always the safer choice, since "Fill" can visibly stretch or squash straight lines and lettering.</p>
-    <h3>Multiple images, one PDF</h3>
-    <p>Every image you add becomes its own page inside the same PDF file, in the exact order you upload them. This is what turns a folder of ten separate scans into a single, properly sequenced document.</p>
+    <h2>Page Size and Image Fit</h2>
+    <strong>Page size.</strong> A4 (210 × 297 mm) is the standard in most countries, and Letter (8.5 × 11 in) is common in the United States and Canada. A3 is 297 × 420 mm. These pages are always portrait in this tool.<strong>Fit to Image.</strong> Each page takes the dimensions of its image, so there are no margins. This suits on-screen viewing but not printing on standard paper.<strong>Fit vs Fill.</strong> Fit scales the image to the page while keeping its proportions, which can leave blank space. Fill stretches the image to the whole page and distorts it unless the proportions match. For scanned documents and anything with text, Fit is normally the better choice.<p>The tool has no margin, orientation or page-reordering options. If you need one of those, prepare the images first, for example with <a href="rotate-flip.html">Rotate &amp; Flip</a> or <a href="crop-image.html">Crop Image</a>.</p>
+    
   </div>
 
   <div class="section-block">
-    <div class="section-label">Quality</div>
-    <h2>Image Quality Inside a PDF</h2>
-    <p>Converting an image to PDF embeds the picture at its original resolution, nothing is recompressed or downscaled in the process. What you see in the source image is what ends up on the PDF page, at the same pixel detail. The one thing that does change is file size: a PDF containing several embedded photos, particularly high-resolution ones, is often larger than the sum of the original image files, since the PDF format adds some structural overhead on top of the embedded pictures.</p>
-    <div class="note-box">If your priority is the smallest possible file size rather than maximum quality, it's worth <a href="compress-image.html" style="color:var(--cyan2);font-weight:600">compressing the images</a> before converting them to PDF, since a PDF converter's job is to embed the images as given, not to optimize them.</div>
+    <div class="section-label">Quality and File Size</div>
+    <h2>What Happens to the Images</h2>
+    <p>Each image is drawn onto a canvas at its full pixel size and added to the PDF as a JPEG at 92% quality. That keeps photos and scans looking close to the original, but it is a re-encode rather than a lossless copy.</p>
+    <p>Two practical consequences follow. Transparent PNGs lose their transparency, and the transparent areas can appear black. And because large photos stay large, the PDF can be heavy. If a portal limits file size, reduce the images first with <a href="resize-image.html">Resize Image</a> or <a href="compress-image.html">Compress Image</a>.</p>
+    
   </div>
 
   <div class="section-block">
-    <div class="section-label">Use Cases</div>
-    <h2>Common Real-World Use Cases</h2>
-    <p><strong>Submitting ID or document scans</strong>: Passport photos, Aadhaar or ID cards, bank statements, and utility bills photographed on a phone, combined into a single PDF for a portal that requires one.</p>
-    <p><strong>School and university assignments</strong>: Photos of handwritten homework or lab notebooks turned into one ordered PDF for submission through an LMS or email.</p>
-    <p><strong>Receipts and expense reports</strong>: A stack of photographed receipts converted into a single PDF for reimbursement or bookkeeping, instead of a dozen loose image attachments.</p>
-    <p><strong>Real estate and product listings</strong>: Multiple property or product photos combined into a single browsable PDF brochure to send to a client.</p>
-    <p><strong>Portfolios and project submissions</strong>: Designers, students, and freelancers combining work samples into one PDF instead of sending a folder of scattered images.</p>
-    <p><strong>Visa and government form attachments</strong>: Many application portals explicitly reject image formats and only accept PDF, even for what is fundamentally just a photographed document.</p>
-    <p><strong>Signed and physically stamped documents</strong>: A photographed contract page, signature page, or stamped form converted to PDF for official record-keeping.</p>
+    <div class="section-label">Preparing Images</div>
+    <h2>Tips for Documents, Scans and Forms</h2>
+    <strong>Check the requirements first.</strong> Portals often specify page size, maximum file size and whether one combined file is allowed. Follow those rules rather than the defaults here.<strong>Photograph documents flat and evenly lit.</strong> Crop away the background and rotate pages upright before converting, so the text is as large and readable as possible on the page.<strong>Add the files in order.</strong> Because the pages follow the order the files are added, select them in the order you want them to appear.<strong>JPG or PNG source?</strong> Because the PDF stores JPEG data either way, there is little reason to convert photos to PNG first. Use PNG sources only if you need to edit them elsewhere before creating the PDF.
   </div>
 
   <div class="section-block">
     <div class="section-label">Common Questions</div>
     <h2>Frequently Asked Questions</h2>
     <div class="faq-list">
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I convert multiple images to one PDF? <span class="faq-arrow">▾</span></div><div class="faq-a">Yes. Upload as many images as you need and they're combined into a single PDF file, with each image placed on its own page in the exact order you added them.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is my image uploaded to a server? <span class="faq-arrow">▾</span></div><div class="faq-a">No. The entire conversion happens locally inside your browser using JavaScript. Your images are never transmitted anywhere, never stored, and never seen by anyone else, unlike many cloud-based PDF tools that upload your files to their servers and only delete them after a set time.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What image formats are supported? <span class="faq-arrow">▾</span></div><div class="faq-a">JPG, PNG, and WEBP are all supported and embedded correctly into the output PDF.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Which page size should I choose? <span class="faq-arrow">▾</span></div><div class="faq-a">A4 is the standard for most countries outside North America. Letter is standard in the United States. If the PDF is only for on-screen viewing and will never be printed, "Fit to Image" avoids any extra margin by matching the page exactly to your image's dimensions.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Will converting to PDF reduce my image quality? <span class="faq-arrow">▾</span></div><div class="faq-a">No. The image is embedded at its original resolution with no recompression. The only side effect is that the PDF file can be somewhat larger than the original image, since PDF adds its own structural data on top of the embedded picture.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I reorder images before converting? <span class="faq-arrow">▾</span></div><div class="faq-a">Images appear in the PDF in the order they were uploaded. To change the order, remove an image with the clear button and re-add it in the position you want.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do I need to install anything or create an account? <span class="faq-arrow">▾</span></div><div class="faq-a">No. The tool works entirely in your browser with no signup, no software installation, and no watermark added to your output file.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I convert a single image to PDF, or does it only work with multiple images? <span class="faq-arrow">▾</span></div><div class="faq-a">Both. Uploading just one image produces a single-page PDF; uploading several produces a multi-page PDF with one image per page.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why do some portals reject my photo but accept a PDF of the same photo? <span class="faq-arrow">▾</span></div><div class="faq-a">Many upload systems are configured to only accept document formats like PDF, DOC, or PDF/A, specifically to keep submissions consistent and predictable across devices, viewers, and printers. Wrapping the exact same photo in a PDF container is usually all it takes to satisfy that requirement.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does the orientation of my photo (portrait or landscape) matter? <span class="faq-arrow">▾</span></div><div class="faq-a">The tool detects and preserves each image's natural orientation on its page. If a photo looks sideways in the finished PDF, it typically means the original photo file itself was saved with rotated orientation metadata, which is worth checking before converting.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is there a limit to how many images I can combine? <span class="faq-arrow">▾</span></div><div class="faq-a">There's no fixed limit on the number of images; the only practical constraint is your device's available memory when working with very large or very high-resolution files.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I change the order of the pages? <span class="faq-arrow">▾</span></div><div class="faq-a">Pages follow the order in which the images were added. There is no drag-and-drop reordering. To change the order, remove an image with the ✕ button and add it again, or clear everything and add the files in the order you want.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is the image quality kept inside the PDF? <span class="faq-arrow">▾</span></div><div class="faq-a">Each image is drawn onto a canvas and saved into the PDF as a JPEG at 92% quality, so photos stay close to the original but are not stored byte for byte. Transparent areas of a PNG are not preserved and can turn black.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Which page size should I choose? <span class="faq-arrow">▾</span></div><div class="faq-a">Choose A4 or Letter if the PDF will be printed or if a portal asks for a standard page. Choose A3 for larger sheets. Choose Fit to Image when the PDF is only meant to be viewed on a screen and each page should match its image exactly.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why is there empty space around my landscape photo? <span class="faq-arrow">▾</span></div><div class="faq-a">A4, Letter and A3 pages are portrait. With "Fit (keep aspect ratio)" a landscape image is scaled to the page width, which leaves blank space above and below. Use "Fit to Image" if you want a page that matches the image, or rotate the photo first.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why is my PDF so large? <span class="faq-arrow">▾</span></div><div class="faq-a">File size depends on how many pixels the images contain. Large phone photos produce large PDFs. Resize or compress the images before converting, or use fewer photos per file.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is there a limit on the number of images? <span class="faq-arrow">▾</span></div><div class="faq-a">The tool does not set a limit, but everything is processed in your browser, so very many large images can be slow or run out of memory on a phone or older computer.</div></div>
     </div>
   </div>
+
 </div>
 
 <section class="related-section">
-  <h2>More Free Image Tools</h2>
-  <p>Everything you need, all completely free.</p>
+  <h2>More Image Tools</h2>
+  
   <div class="related-grid">
     <a href="resize-image.html" class="related-card"><div class="r-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div><h3>Resize Image</h3><p>Change image dimensions</p></a>
     <a href="compress-image.html" class="related-card"><div class="r-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Compress Image</h3><p>Reduce file size</p></a>

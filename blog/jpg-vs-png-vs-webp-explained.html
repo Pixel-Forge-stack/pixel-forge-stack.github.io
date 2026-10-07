@@ -35,17 +35,73 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Which format is best for website images?", "acceptedAnswer": { "@type": "Answer", "text": "WebP is generally the best default for websites today, since it produces smaller files than JPG or PNG at similar visual quality, which speeds up page load. Fall back to JPG for photos or PNG for graphics/transparency if you need maximum compatibility with very old browsers or tools." } },
-    { "@type": "Question", "name": "Is PNG always higher quality than JPG?", "acceptedAnswer": { "@type": "Answer", "text": "PNG is lossless, so it never loses detail, while JPG's lossy compression can. But \"higher quality\" only matters if the JPG is compressed heavily. A lightly compressed JPG of a photo can look visually identical to a PNG while being a fraction of the file size." } },
-    { "@type": "Question", "name": "Why is my PNG file so much bigger than a JPG of the same photo?", "acceptedAnswer": { "@type": "Answer", "text": "PNG stores every pixel losslessly with no data thrown away, while JPG intentionally discards detail the eye won't easily notice. For photographic content, that trade-off usually makes PNG files 3 to 10 times larger than an equivalent JPG." } },
-    { "@type": "Question", "name": "Does WebP support transparency like PNG?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WebP supports a full alpha transparency channel just like PNG, while also offering both lossy and lossless compression modes, which is part of why it's replacing PNG in many web use cases." } },
-    { "@type": "Question", "name": "Can all browsers and apps open WebP files?", "acceptedAnswer": { "@type": "Answer", "text": "Nearly all modern browsers support WebP, but some older software, older versions of certain design tools, and some social platforms still expect JPG or PNG specifically. If you're sharing a file outside the web rather than embedding it on a page, JPG or PNG remains the safer universal choice." } },
-    { "@type": "Question", "name": "Should I use JPG or PNG for a logo?", "acceptedAnswer": { "@type": "Answer", "text": "Use PNG for logos. Logos usually need a transparent background and have sharp edges and flat colors, both of which PNG handles perfectly and JPG handles poorly, since JPG compression blurs sharp edges and cannot store transparency at all." } },
-    { "@type": "Question", "name": "What happens if I convert a JPG to PNG, does it get better quality?", "acceptedAnswer": { "@type": "Answer", "text": "No. Converting a JPG to PNG cannot restore detail that was already lost during JPG compression. It simply repackages the current image losslessly from that point forward, preventing further degradation on future saves, but it doesn't undo damage that's already there." } },
-    { "@type": "Question", "name": "Which format should I use for printing photos?", "acceptedAnswer": { "@type": "Answer", "text": "JPG is the standard format most print services and consumer printers expect for photographs. Use a high-quality, lightly compressed JPG for the best balance of print quality and manageable file size." } }
+    {
+      "@type": "Question",
+      "name": "Which format is best for website images?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WebP is generally the best default for websites today, since it produces smaller files than JPG or PNG at similar visual quality, which speeds up page load. Fall back to JPG for photos or PNG for graphics/transparency if you need maximum compatibility with very old browsers or tools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is PNG always higher quality than JPG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PNG is lossless, so it never loses detail, while JPG's lossy compression can. But \"higher quality\" only matters if the JPG is compressed heavily. A lightly compressed JPG of a photo can look visually identical to a PNG while being a fraction of the file size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my PNG file so much bigger than a JPG of the same photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PNG stores every pixel losslessly with no data thrown away, while JPG intentionally discards detail the eye won't easily notice. For photographic content, that trade-off usually makes PNG files 3 to 10 times larger than an equivalent JPG."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does WebP support transparency like PNG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. WebP supports a full alpha transparency channel just like PNG, while also offering both lossy and lossless compression modes, which is why it is used in place of PNG in some web use cases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can all browsers and apps open WebP files?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nearly all modern browsers support WebP, but some older software, older versions of certain design tools, and some social platforms still expect JPG or PNG specifically. If you're sharing a file outside the web rather than embedding it on a page, JPG or PNG remains the safer choice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use JPG or PNG for a logo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use PNG for logos. Logos usually need a transparent background and have sharp edges and flat colors, both of which PNG handles perfectly and JPG handles poorly, since JPG compression blurs sharp edges and cannot store transparency at all."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I convert a JPG to PNG, does it get better quality?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Converting a JPG to PNG cannot restore detail that was already lost during JPG compression. It simply repackages the current image losslessly from that point forward, preventing further degradation on future saves, but it doesn't undo damage that's already there."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which format should I use for printing photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JPG is the standard format most print services and consumer printers expect for photographs. Use a high-quality, lightly compressed JPG for the best balance of print quality and manageable file size."
+      }
+    }
   ]
 }
-</script>
+  </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <style>
@@ -190,16 +246,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p>The trade-off is file size. Because nothing is compressed away, PNG files are typically much larger than an equivalent JPG, especially for photographic content with lots of color variation.</p>
 
   <h3>WebP, The Modern Format Built for the Web</h3>
-  <p>WebP is a newer format developed by Google specifically to solve the JPG-vs-PNG trade-off. It supports both lossy and lossless compression in the same format, plus full transparency like PNG, but typically produces files 25–35% smaller than a comparable JPG and significantly smaller than an equivalent PNG. Nearly every modern browser supports it, which is why most websites have switched to serving WebP images automatically to speed up page loading.</p>
+  <p>WebP is a newer format developed by Google specifically to solve the JPG-vs-PNG trade-off. It supports both lossy and lossless compression in the same format, plus full transparency like PNG, but often produces smaller files than a comparable JPG or PNG. How much smaller varies with the image and the encoder settings. Nearly every modern browser supports it, which is why most websites have switched to serving WebP images automatically to speed up page loading.</p>
   <p>The trade-off is compatibility outside the web. Some older software, certain design tools, and a handful of platforms still expect JPG or PNG specifically, so WebP isn't yet the safest choice for a file you're sending directly to someone rather than embedding on a webpage.</p>
 
   <div class="callout">
-    <strong>One-sentence summary of each:</strong> JPG trades quality for small size, PNG trades size for perfect quality and transparency, and WebP tries to get the best of both, small size <em>and</em> transparency, at the cost of slightly less universal support.
+    <strong>One-sentence summary of each:</strong> JPG trades quality for small size, PNG trades size for exact pixel storage and transparency, and WebP tries to get the best of both, small size <em>and</em> transparency, at the cost of slightly less universal support.
   </div>
 
   <h2>Lossy vs Lossless, Explained Simply</h2>
   <p>This single concept explains almost every practical difference between these formats. <strong>Lossy compression</strong> (used by JPG, and optionally by WebP) removes some image data permanently to shrink the file, a bit like summarizing a paragraph instead of quoting it word for word. <strong>Lossless compression</strong> (used by PNG, and optionally by WebP) repackages the data more efficiently without removing anything, like zipping a file, where unzipping it gives you back the exact original.</p>
-  <p>Lossy compression is great when the goal is a smaller file and a small amount of invisible detail loss is an acceptable trade. Lossless compression is essential when every pixel matters, for editing masters, logos, or anything where a slight blur or color shift would actually be noticeable.</p>
+  <p>Lossy compression is great when the goal is a smaller file and a small amount of detail loss, often hard to notice, is an acceptable trade. Lossless compression is essential when every pixel matters, for editing masters, logos, or anything where a slight blur or color shift would actually be noticeable.</p>
 
   <h2>Transparency: The Feature That Decides a Lot of Decisions</h2>
   <p>JPG has no concept of transparency whatsoever, every pixel must have a solid RGB color. PNG and WebP both support a full alpha channel, meaning any pixel can be anywhere from fully opaque to fully invisible. If your image needs to sit cleanly on top of another background, a logo on a webpage, an icon over a photo, a product cutout, it has to be PNG or WebP. There's no way around this with JPG; it's a hard technical limitation of the format, not a setting you can change.</p>
@@ -223,7 +279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="cta-box">
     <h3>Need to Convert Between Formats?</h3>
-    <p>Convert JPG to PNG or PNG to JPG instantly, right in your browser. No upload, no signup, no watermark.</p>
+    <p>Convert JPG to PNG or PNG to JPG right in your browser. No upload, no signup, no watermark.</p>
     <a href="../jpg-to-png.html" class="cta-btn">JPG to PNG →</a>
     <a href="../png-to-jpg.html" class="cta-btn ghost">PNG to JPG →</a>
   </div>
@@ -231,7 +287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2>Practical Guide: Which Format for Which Situation</h2>
 
   <h3>Photos and Camera Shots</h3>
-  <p>Use JPG for general storage and sharing, it's universally supported and the file size stays manageable. If the photo is going on a website, serve it as WebP instead where possible; the visual difference at normal quality settings is negligible, but the load-time savings add up fast across a whole page.</p>
+  <p>Use JPG for general storage and sharing, it is very widely supported and the file size stays manageable. If the photo is going on a website, serve it as WebP instead where possible; the visual difference at normal quality settings is negligible, but the load-time savings add up fast across a whole page.</p>
 
   <h3>Logos, Icons, and Graphics</h3>
   <p>Use PNG. The combination of transparency support and lossless sharp edges is exactly what logos and icons need, and file size is rarely a major concern for small graphic assets. For a website's logo specifically, WebP works too and saves some bandwidth, as long as your platform supports it.</p>
@@ -269,12 +325,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">Does WebP support transparency like PNG? <span class="faq-arrow">▾</span></div>
-        <div class="faq-a">Yes. WebP supports a full alpha transparency channel just like PNG, while also offering both lossy and lossless compression modes, which is part of why it's replacing PNG in many web use cases.</div>
+        <div class="faq-a">Yes. WebP supports a full alpha transparency channel just like PNG, while also offering both lossy and lossless compression modes, which is why it is used in place of PNG in some web use cases.</div>
       </div>
 
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">Can all browsers and apps open WebP files? <span class="faq-arrow">▾</span></div>
-        <div class="faq-a">Nearly all modern browsers support WebP, but some older software, older versions of certain design tools, and some social platforms still expect JPG or PNG specifically. If you're sharing a file outside the web rather than embedding it on a page, JPG or PNG remains the safer universal choice.</div>
+        <div class="faq-a">Nearly all modern browsers support WebP, but some older software, older versions of certain design tools, and some social platforms still expect JPG or PNG specifically. If you're sharing a file outside the web rather than embedding it on a page, JPG or PNG remains the safer choice.</div>
       </div>
 
       <div class="faq-item">

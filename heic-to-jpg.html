@@ -10,8 +10,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>HEIC to JPG Converter Online Free | Pixel Forge Stack</title>
-  <meta name="description" content="Convert HEIC photos from iPhone to JPG online for free. No signup, no watermark. Fast and private. Works in your browser."/>
+  <title>HEIC to JPG Converter Online | Pixel Forge Stack</title>
+  <meta name="description" content="Convert HEIC or HEIF photos from an iPhone to JPG in your browser. Works where your browser can open HEIC files; the photo is not uploaded."/>
   <link rel="canonical" href="https://pixel-forge-stack.github.io/heic-to-jpg.html" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -19,15 +19,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Pixel Forge Stack" />
-  <meta property="og:title" content="HEIC to JPG Converter Online Free | Pixel Forge Stack" />
-  <meta property="og:description" content="Convert HEIC photos from iPhone to JPG online for free. No signup, no watermark. Fast and private. Works in your browser." />
+  <meta property="og:title" content="HEIC to JPG Converter Online | Pixel Forge Stack" />
+  <meta property="og:description" content="Convert HEIC or HEIF photos from an iPhone to JPG in your browser. Works where your browser can open HEIC files; the photo is not uploaded." />
   <meta property="og:url" content="https://pixel-forge-stack.github.io/heic-to-jpg.html" />
   <meta property="og:image" content="https://pixel-forge-stack.github.io/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="HEIC to JPG Converter Online Free | Pixel Forge Stack" />
-  <meta name="twitter:description" content="Convert HEIC photos from iPhone to JPG online for free. No signup, no watermark. Fast and private. Works in your browser." />
+  <meta name="twitter:title" content="HEIC to JPG Converter Online | Pixel Forge Stack" />
+  <meta name="twitter:description" content="Convert HEIC or HEIF photos from an iPhone to JPG in your browser. Works where your browser can open HEIC files; the photo is not uploaded." />
   <meta name="twitter:image" content="https://pixel-forge-stack.github.io/og-image.png" />
   <script type="application/ld+json">
 {
@@ -36,8 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "name": "HEIC to JPG Converter Online Free",
   "url": "https://pixel-forge-stack.github.io/heic-to-jpg.html",
   "applicationCategory": "MultimediaApplication",
-  "operatingSystem": "Any (runs in browser)",
-  "description": "Convert HEIC photos from iPhone to JPG online for free. No signup, no watermark. Fast and private. Works in your browser.",
+  "operatingSystem": "Web browser",
+  "description": "Convert HEIC or HEIF photos to JPG in your browser. Works where your browser can open HEIC files.",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -52,10 +52,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why can't I open HEIC files on my Windows PC?",
+      "name": "Why does the tool say it could not read my HEIC file?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Windows does not support HEIC natively. You can either install the HEIF Image Extensions from the Microsoft Store, or simply convert your HEIC files to JPG using our tool, which is the easier and faster option."
+        "text": "The tool relies on your browser to open the file, and not every browser or operating system can decode HEIC. Safari on an iPhone or Mac generally can. If yours cannot, try Safari on an Apple device, or convert the photo on the iPhone itself, for example by switching the camera format as described below."
       }
     },
     {
@@ -63,23 +63,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "Does converting HEIC to JPG reduce quality?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There is a very small quality reduction when converting from HEIC to JPG because JPG is a lossy format. However, at high quality settings the difference is not visible to the naked eye. Our tool uses 92% quality for the JPG output, which preserves excellent visual quality."
+        "text": "Yes, slightly. JPG is a lossy format, so the image is re-encoded. The tool saves JPG at 92% quality, which keeps most photos looking very close to the original, but it is not an exact copy. Keep the original HEIC if you may need it later."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I stop my iPhone from taking photos in HEIC?",
+      "name": "Is location and camera data kept in the JPG?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Go to Settings on your iPhone, then Camera, then Formats. Change the setting from \"High Efficiency\" to \"Most Compatible\". This will make your iPhone save photos as JPG instead of HEIC going forward."
+        "text": "Do not count on it. The tool redraws the image onto a canvas and saves a new JPG, which typically does not carry over metadata such as EXIF details or location. That can be useful for privacy, but it also means information like the capture date may be missing."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this converter free and private?",
+      "name": "Why can I not open HEIC files on my Windows PC?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, completely free and completely private. Your photos are never uploaded to any server. The conversion happens inside your browser using the browser's built-in image handling capabilities. No one else can see your photos at any point."
+        "text": "Windows may need extra codecs, such as the HEIF Image Extensions from the Microsoft Store, and some HEIC photos also need HEVC support. Converting to JPG avoids the problem for files you want to share or upload."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I make my iPhone save JPG instead of HEIC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open Settings, go to Camera, then Formats, and choose Most Compatible. New photos are then saved as JPG. Photos you already took stay in HEIC."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I convert several HEIC files at once?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The tool converts one image per run. Choose the next file after downloading the first."
       }
     }
   ]
@@ -165,7 +181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="hero">
   <div class="hero-badge">Free · No Login · No Watermark</div>
   <h1>HEIC to JPG <span>Converter Online</span></h1>
-  <p>Convert iPhone HEIC photos to universally compatible JPG format instantly. No app needed, no signup, completely free. Works on any device and browser.</p>
+  <p>Convert an iPhone HEIC photo to JPG in your browser. The photo is not uploaded to our servers. The converter relies on your browser to open the HEIC file, so support depends on your browser and device.</p>
   <div class="tool-box">
     <div class="upload-zone" id="uploadZone">
       <input type="file" id="fileInput" accept="image/*,.heic,.heif"/>
@@ -176,7 +192,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div id="ctrlPanel">
       <div class="preview-wrap"><img id="prevImg" alt="Preview"/></div>
-      <div class="notice">⚠️ Note: HEIC is a proprietary Apple format. Most modern browsers can display HEIC files uploaded from iPhone. If your HEIC file does not preview, it will still be converted when you click download. For best results, use Chrome or Safari on a Mac or iPhone.</div>
+      <div class="notice">⚠️ This tool uses your browser to open HEIC files. If the preview does not appear, your browser may not support HEIC. Safari on an iPhone or Mac generally does; otherwise try another device or change the iPhone camera format to Most Compatible.</div>
       <button class="btn-dl" onclick="doConvert()">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download as JPG
@@ -188,42 +204,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <div class="content-wrap">
+
   <div class="section-block">
     <div class="section-label">What Is HEIC</div>
-    <h2>What Is HEIC and Why Do iPhones Use It?</h2>
-    <p>HEIC stands for High Efficiency Image Container. It is the default photo format used by iPhones running iOS 11 and later. Apple introduced HEIC because it produces smaller file sizes than JPG while maintaining the same or better image quality. A HEIC photo is typically about half the size of the same photo in JPG format, which means your iPhone can store twice as many photos in the same amount of storage space.</p>
-    <p>While HEIC is great for storing photos on your iPhone, it creates a problem when you try to share those photos with people who are not using Apple devices. Windows PCs, Android phones, and many websites and applications do not support HEIC natively. If you have ever sent an iPhone photo to a friend or uploaded it to a website and it did not display correctly, this is likely the reason.</p>
-    <p>Converting HEIC to JPG solves this problem instantly. JPG is the most universally supported image format in the world. Every device, every browser, every application, and every website supports JPG. Once you convert your HEIC photo to JPG, you can share it, upload it, print it, or use it anywhere without any compatibility issues.</p>
-    <p>Our HEIC to JPG converter works directly in your browser. You upload the HEIC file, the browser reads it, and the tool converts it to JPG and downloads it to your device. The conversion is instant and completely free.</p>
+    <h2>HEIC and JPG: What Changes in the Conversion</h2>
+    <p>HEIC (High Efficiency Image Container) is a file format based on the HEIF standard. iPhones and iPads have used it as the default camera format since iOS 11. It generally stores a photo at a smaller file size than JPG for comparable visual quality, and it can hold extra data such as depth information.</p>
+    <p>The drawback is compatibility. Some Windows computers, Android devices, websites and older apps cannot open HEIC. JPG is one of the most widely supported image formats across devices, browsers, applications and websites, so converting is a common way to share, upload or print an iPhone photo.</p>
+    
   </div>
+
   <div class="section-block">
     <div class="section-label">How It Works</div>
-    <h2>How to Convert HEIC to JPG</h2>
-    <p><strong>1. Upload your HEIC photo.</strong> Drag and drop it into the upload area, or click to select it from your device, including directly from an iPhone photo library if you're browsing on mobile.</p>
-    <p><strong>2. Let the tool convert it.</strong> Your HEIC file is decoded and converted to standard JPG entirely inside your browser, so nothing is ever uploaded to a server.</p>
-    <p><strong>3. Download your JPG.</strong> The converted file saves straight to your device and will open on any computer, phone, or website without special software.</p>
+    <h2>How This Converter Works</h2>
+    <p>Choose a HEIC photo. The tool asks your browser to open the file, draws it onto a canvas, and saves it as a JPG at 92% quality. All of this happens in your browser, and the image is not uploaded to our image-processing servers.</p>
+    <strong>Browser support matters.</strong> The tool does not include its own HEIC decoder. If your browser can display HEIC files, the conversion works. If it cannot, you will see an error message instead of a download. Support differs between browsers, operating systems and versions, so the reliable approach is to try it, or to use Safari on an Apple device.<strong>Other formats.</strong> The same page also accepts JPG, PNG and WebP files and saves them as JPG.
   </div>
+
+  <div class="section-block">
+    <div class="section-label">What Changes</div>
+    <h2>Quality, Size and Metadata</h2>
+    <strong>Quality.</strong> Converting to JPG is a lossy step. At 92% quality the difference is small for most photos, but fine detail can be slightly softer, especially after repeated edits and re-saves.<strong>File size.</strong> A JPG made from a HEIC photo is often larger than the original HEIC, because JPG is a less efficient format. If you need a smaller file, use <a href="compress-image.html">Compress Image</a> or <a href="resize-image.html">Resize Image</a> afterwards.<strong>Metadata.</strong> The new JPG is created from the pixels on a canvas, so details such as EXIF data and location are normally not carried over. Check the result if you rely on that information.<strong>Transparency.</strong> Photos from an iPhone camera do not normally have transparency, so this is rarely a concern for HEIC.
+  </div>
+
   <div class="section-block">
     <div class="section-label">Good To Know</div>
-    <h2>Tips for Working with HEIC Photos</h2>
-    <p><strong>HEIC is Apple's default photo format</strong> on iPhones running iOS 11 and later. It compresses better than JPG at the same visual quality, which is great for saving storage, but it isn't widely supported outside Apple's ecosystem.</p>
-    <p><strong>Convert before sharing with non-Apple devices.</strong> Windows PCs, many Android phones, and some websites and apps still can't open HEIC files directly. Converting to JPG first guarantees the photo will open anywhere.</p>
-    <p><strong>You can change this at the source too.</strong> On an iPhone, going to Settings → Camera → Formats and selecting "Most Compatible" will save future photos as JPG automatically, though converting existing HEIC photos still requires a tool like this one.</p>
+    <h2>Changing the Format at the Source</h2>
+    <p>On an iPhone you can change the camera format under Settings, Camera, Formats, by choosing Most Compatible. New photos are then saved as JPG, while existing photos stay HEIC. Many sharing options in iOS can also convert photos when you send them, though behaviour varies by app and settings.</p>
+    
   </div>
+
   <div class="section-block">
     <div class="section-label">Common Questions</div>
     <h2>Frequently Asked Questions</h2>
     <div class="faq-list">
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why can't I open HEIC files on my Windows PC? <span class="faq-arrow">▾</span></div><div class="faq-a">Windows does not support HEIC natively. You can either install the HEIF Image Extensions from the Microsoft Store, or simply convert your HEIC files to JPG using our tool, which is the easier and faster option.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does converting HEIC to JPG reduce quality? <span class="faq-arrow">▾</span></div><div class="faq-a">There is a very small quality reduction when converting from HEIC to JPG because JPG is a lossy format. However, at high quality settings the difference is not visible to the naked eye. Our tool uses 92% quality for the JPG output, which preserves excellent visual quality.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How do I stop my iPhone from taking photos in HEIC? <span class="faq-arrow">▾</span></div><div class="faq-a">Go to Settings on your iPhone, then Camera, then Formats. Change the setting from "High Efficiency" to "Most Compatible". This will make your iPhone save photos as JPG instead of HEIC going forward.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is this converter free and private? <span class="faq-arrow">▾</span></div><div class="faq-a">Yes, completely free and completely private. Your photos are never uploaded to any server. The conversion happens inside your browser using the browser's built-in image handling capabilities. No one else can see your photos at any point.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why does the tool say it could not read my HEIC file? <span class="faq-arrow">▾</span></div><div class="faq-a">The tool relies on your browser to open the file, and not every browser or operating system can decode HEIC. Safari on an iPhone or Mac generally can. If yours cannot, try Safari on an Apple device, or convert the photo on the iPhone itself, for example by switching the camera format as described below.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does converting HEIC to JPG reduce quality? <span class="faq-arrow">▾</span></div><div class="faq-a">Yes, slightly. JPG is a lossy format, so the image is re-encoded. The tool saves JPG at 92% quality, which keeps most photos looking very close to the original, but it is not an exact copy. Keep the original HEIC if you may need it later.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is location and camera data kept in the JPG? <span class="faq-arrow">▾</span></div><div class="faq-a">Do not count on it. The tool redraws the image onto a canvas and saves a new JPG, which typically does not carry over metadata such as EXIF details or location. That can be useful for privacy, but it also means information like the capture date may be missing.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why can I not open HEIC files on my Windows PC? <span class="faq-arrow">▾</span></div><div class="faq-a">Windows may need extra codecs, such as the HEIF Image Extensions from the Microsoft Store, and some HEIC photos also need HEVC support. Converting to JPG avoids the problem for files you want to share or upload.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How do I make my iPhone save JPG instead of HEIC? <span class="faq-arrow">▾</span></div><div class="faq-a">Open Settings, go to Camera, then Formats, and choose Most Compatible. New photos are then saved as JPG. Photos you already took stay in HEIC.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I convert several HEIC files at once? <span class="faq-arrow">▾</span></div><div class="faq-a">No. The tool converts one image per run. Choose the next file after downloading the first.</div></div>
     </div>
   </div>
+
 </div>
 
 <section class="related-section">
-  <h2>More Free Image Tools</h2><p>Everything you need, all completely free.</p>
+  <h2>More Image Tools</h2>
   <div class="related-grid">
     <a href="image-to-ico.html" class="related-card">
       <div class="r-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 8h.01M16 8h.01M8 16h8"/></svg></div>
@@ -254,9 +280,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const a=document.createElement('a');
       a.download=currentFile.name.replace(/\.[^.]+$/,'')+'.jpg';
       a.href=c.toDataURL('image/jpeg',0.92);a.click();
-      const bar=document.getElementById('statusBar');bar.textContent='✓ JPG downloaded successfully!';bar.classList.add('active');
+      const bar=document.getElementById('statusBar');bar.textContent='✓ JPG downloaded.';bar.classList.add('active');
     };
-    img.onerror=()=>{document.getElementById('statusBar').textContent='⚠ Could not read this HEIC file in your browser. Try opening on Safari/Mac or converting on your iPhone first.';document.getElementById('statusBar').classList.add('active')};
+    img.onerror=()=>{document.getElementById('statusBar').textContent='⚠ Your browser could not read this file. Try Safari on a Mac or iPhone, or change the iPhone camera format to Most Compatible.';document.getElementById('statusBar').classList.add('active')};
     img.src=URL.createObjectURL(currentFile);
   }
   function resetTool(){currentFile=null;zone.style.display='block';document.getElementById('ctrlPanel').classList.remove('active');document.getElementById('statusBar').classList.remove('active');fi.value=''}
