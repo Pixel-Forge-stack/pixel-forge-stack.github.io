@@ -11,10 +11,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Resize vs Compress vs Crop: What Each One Does</title>
-<meta name="description" content="Resizing, compressing and cropping change an image in different ways. Learn what each one changes, which to use for a given goal, and the best order."/>
+<meta name="description" content="Resizing, compressing and cropping change an image in different ways. Learn what each one changes, when to use which, and the best order to use them in."/>
 <link rel="canonical" href="https://pixel-forge-stack.github.io/blog/resize-vs-compress-vs-crop.html"/>
 <meta property="og:title" content="Resize vs Compress vs Crop: What Each One Does | Pixel Forge Stack"/>
-<meta property="og:description" content="Resizing, compressing and cropping change an image in different ways. Learn what each one changes, which to use for a given goal, and the best order."/>
+<meta property="og:description" content="Resizing, compressing and cropping change an image in different ways. Learn what each one changes, when to use which, and the best order to use them in."/>
 <meta property="og:type" content="article"/>
 <meta property="og:url" content="https://pixel-forge-stack.github.io/blog/resize-vs-compress-vs-crop.html"/>
 <meta property="og:image" content="https://pixel-forge-stack.github.io/og-image.png"/>
@@ -22,7 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:image:height" content="630"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Resize vs Compress vs Crop: What Each One Does | Pixel Forge Stack"/>
-<meta name="twitter:description" content="Resizing, compressing and cropping change an image in different ways. Learn what each one changes, which to use for a given goal, and the best order."/>
+<meta name="twitter:description" content="Resizing, compressing and cropping change an image in different ways. Learn what each one changes, when to use which, and the best order to use them in."/>
 <meta name="twitter:image" content="https://pixel-forge-stack.github.io/og-image.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
@@ -97,56 +97,9 @@ footer p{font-size:.82rem}
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://pixel-forge-stack.github.io/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://pixel-forge-stack.github.io/blog.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Resize vs Compress vs Crop",
-      "item": "https://pixel-forge-stack.github.io/blog/resize-vs-compress-vs-crop.html"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Does cropping reduce file size?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Often, because fewer pixels are saved, but the amount depends on the content and format. Cropping is meant to change composition, not to hit a file-size target."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which is better for hitting a KB limit, resizing or compressing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Usually a mix. Reducing the dimensions gives the largest saving with the least visible damage. Lowering quality then fine-tunes the size."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I resize without changing the shape?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Keep the aspect ratio locked, and both dimensions change by the same proportion."
-      }
-    }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pixel-forge-stack.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://pixel-forge-stack.github.io/blog.html" },
+    { "@type": "ListItem", "position": 3, "name": "Resize vs Compress vs Crop: What Each One Does", "item": "https://pixel-forge-stack.github.io/blog/resize-vs-compress-vs-crop.html" }
   ]
 }
   </script>
@@ -167,57 +120,221 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </ul>
 </nav>
 
-<div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog.html">Blog</a> &rsaquo; Reduce Image Size in KB</div>
+<div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog.html">Blog</a> &rsaquo; Resize vs Compress vs Crop: What Each One Does</div>
 
 <div class="article-header">
-  <div class="meta-line">Guide &middot; 6 min read</div>
+  <div class="meta-line">Guide &middot; 12 min read</div>
   <h1>Resize vs Compress vs Crop: What Each One Does</h1>
   <p class="dek">Three similar-sounding jobs that solve different problems, and the order that usually works best.</p>
 </div>
 
 <div class="article-wrap">
 
-  <p>People often use "make the image smaller" to mean three different things. Cropping removes part of the picture, resizing changes how many pixels it has, and compressing changes how the file is encoded. Picking the right one saves time and avoids losing quality for nothing.</p>
+  <p>"Make this image smaller" sounds like one simple request, but it can mean three very different things. You may want fewer pixels, a lighter file, or a different shape. Those three jobs are called resizing, compressing and cropping. They sound alike, they often get mixed up, and picking the wrong one is the most common reason a photo still gets rejected by a form, still loads slowly, or looks stretched.</p>
+  <p>This guide explains what each one really does, how they differ, when to use each, and the order that works best when you need more than one. Everything is in simple words, with real numbers and steps you can follow right away.</p>
 
-  <h2>What Each One Changes</h2>
-<table class="compare-table">
+  <h2>The Short Answer</h2>
+  <ul>
+    <li><strong>Crop</strong> cuts away part of the picture. It changes what is in the frame and often the shape.</li>
+    <li><strong>Resize</strong> changes the width and height in pixels. The whole picture stays, only the number of pixels changes.</li>
+    <li><strong>Compress</strong> changes how the picture is saved so the file takes fewer bytes. The width and height stay the same.</li>
+  </ul>
+  <p>A quick way to remember it: crop changes the <em>frame</em>, resize changes the <em>pixel count</em>, and compress changes the <em>file weight</em>.</p>
+
+  <h2>Comparison Table</h2>
+  <table class="compare-table">
     <tr><th></th><th>Crop</th><th>Resize</th><th>Compress</th></tr>
-    <tr><td>What it changes</td><td>The area that is kept</td><td>The pixel dimensions</td><td>How the pixels are encoded</td></tr>
-    <tr><td>Pixel dimensions</td><td>Smaller, because pixels are cut away</td><td>Changed to the new size</td><td>Unchanged</td></tr>
-    <tr><td>Composition</td><td>Changed</td><td>Unchanged (unless the ratio changes)</td><td>Unchanged</td></tr>
-    <tr><td>File size</td><td>Usually smaller</td><td>Usually smaller when made smaller</td><td>Smaller, at some cost to detail with lossy formats</td></tr>
+    <tr><td>What it changes</td><td>Which part of the picture you keep</td><td>The width and height in pixels</td><td>How the data is stored in the file</td></tr>
+    <tr><td>Removes content?</td><td>Yes, everything outside the box</td><td>No</td><td>No, but lossy modes remove tiny details</td></tr>
+    <tr><td>Pixel dimensions</td><td>Get smaller, because pixels are cut away</td><td>Change to the exact size you choose</td><td>Stay the same</td></tr>
+    <tr><td>Aspect ratio</td><td>Can change, by design</td><td>Should stay the same</td><td>Stays the same</td></tr>
+    <tr><td>Composition</td><td>Changes</td><td>Stays the same</td><td>Stays the same</td></tr>
+    <tr><td>File size</td><td>Usually smaller, but not the goal</td><td>Usually much smaller when shrinking</td><td>Smaller, this is the whole goal</td></tr>
+    <tr><td>Main use</td><td>Framing, focus, fitting a shape</td><td>Fitting a size, faster pages, emails</td><td>Meeting a KB or MB limit</td></tr>
     <tr><td>Tool</td><td><a href="/crop-image.html">Crop Image</a></td><td><a href="/resize-image.html">Resize Image</a></td><td><a href="/compress-image.html">Compress Image</a></td></tr>
   </table>
 
-  <h2>When to Use Each</h2>
-<strong>Crop</strong> when you want a different shape or need to remove something from the frame: a square profile picture, a banner strip, or a tighter composition.
-<strong>Resize</strong> when the image has more pixels than you need. A photo that will be shown 800 pixels wide gains little from keeping 4000. Making an image larger does not add detail, so enlarging usually looks soft.
-<strong>Compress</strong> when the dimensions are right but the file is too heavy, for example to meet an upload limit. JPG and WebP respond to a quality setting, while PNG does not.
+  <h2>First, Understand Pixels and File Size</h2>
+  <p>Most confusion comes from mixing up two different measurements.</p>
+  <ul>
+    <li><strong>Pixel dimensions</strong> are the width and height of the picture, for example 4000 x 3000. Multiply them and you get the pixel count: 4000 x 3000 is 12 million pixels. This is about how detailed the picture is and how big it looks on a screen.</li>
+    <li><strong>File size</strong> is how many bytes the saved file uses, such as 300 KB or 2 MB. This is about how heavy the file is to store, send and upload.</li>
+  </ul>
+  <p>The two are linked, but they are not the same. More pixels usually means a bigger file, but not always. A plain blue sky with 12 million pixels can be smaller than a busy street scene with 2 million pixels, because the sky is easy to describe and the street is not. The file format and the quality setting also matter a lot. So when someone says "make it smaller," always ask yourself: smaller in pixels, smaller in KB, or a different shape?</p>
+  <div class="callout">
+    <strong>Why this matters:</strong> If a form says "maximum 200 KB," that is a file size limit. If it says "must be 600 x 800 pixels," that is a dimension rule. If it says "square photo," that is a shape rule. Each one needs a different tool.
+  </div>
 
-  <h2>A Sensible Order</h2>
-  <p>For most jobs the order is crop, then resize, then compress.</p>
-<ol class="steps-list"><li><strong>Crop</strong> to the shape you need, so you do not resize pixels you will throw away.</li><li><strong>Resize</strong> to the dimensions required. This is usually the biggest single saving.</li><li><strong>Compress</strong> only if the file is still too large, lowering quality gradually and checking the picture.</li></ol>
-  <p>Example: a phone photo of 4000 × 3000 pixels becomes a profile picture. Crop it to a square around the face, resize it to the size the platform asks for, and compress it only if the upload limit requires it.</p>
-  <p>Doing the steps in the opposite order wastes effort. Compressing a very large image first, then shrinking it, applies lossy compression twice.</p>
+  <h2>What Is Cropping?</h2>
+  <p>Cropping means drawing a box around the part of the picture you want to keep and deleting everything outside that box. Nothing inside the box is stretched or squeezed. It is the same as cutting the edges off a printed photo with scissors.</p>
+  <p>Because pixels are removed, a cropped picture has fewer pixels than before. A 4000 x 3000 photo cropped to its middle 2000 x 2000 area is now a 2000 x 2000 picture. Those pixels are gone for good unless you saved the original, and the file is usually smaller too, but that is a side effect and not the purpose.</p>
+
+  <h3>When to crop</h3>
+  <ul>
+    <li><strong>The frame is wrong for the job.</strong> A wide landscape photo needs to fit a square profile picture, or a banner needs a wide slice of a tall photo.</li>
+    <li><strong>You want a stronger composition.</strong> Remove a distracting object, cut empty space, or move the subject closer to the centre or to a third of the frame.</li>
+    <li><strong>You need an exact aspect ratio.</strong> Common ones are 1:1 (square), 4:5 (portrait on social media), 3:2 and 4:3 (cameras and prints), and 16:9 (widescreen video and banners).</li>
+    <li><strong>You are preparing a print.</strong> Prints come in fixed shapes like 4 x 6 and 8 x 10 inches, which are different from a phone camera shape.</li>
+    <li><strong>You want to straighten or tidy the picture.</strong> Many croppers let you tilt slightly so a crooked horizon looks level.</li>
+  </ul>
+
+  <h3>What cropping cannot do</h3>
+  <p>Cropping does not shrink the whole picture and it is not a reliable way to hit a file size limit. Trimming 10 to 20 percent off the edges still leaves a large file. Cropping also acts like a digital zoom: the part you keep becomes a bigger share of the picture, but the pixels are the same, so a very heavy crop on a low resolution photo will look soft or grainy. If you often crop heavily, the better fix is to get closer to the subject when you take the photo.</p>
+
+  <h2>What Is Resizing?</h2>
+  <p>Resizing changes the width and height of the whole picture. Nothing is cut out. The same scene is redrawn on a smaller or larger grid of pixels. If you resize a 4000 x 3000 photo to 1600 x 1200, you still see the whole scene, just with fewer pixels.</p>
+  <p>When you <strong>shrink</strong> a picture, the software blends groups of nearby pixels into single pixels. This is called resampling. Done properly, a smaller picture looks sharp at its smaller size, and the file gets much lighter. When you <strong>enlarge</strong> a picture, the software has to invent new pixels by guessing from the old ones. It cannot bring back detail that was never recorded, so enlarged pictures look soft, blocky or jagged. For more on this, read <a href="/blog/why-resized-image-looks-blurry.html">why resized images look blurry</a>.</p>
+
+  <h3>Keep the aspect ratio locked</h3>
+  <p>The aspect ratio is the proportion of width to height, such as 4:3 or 16:9. When you resize, keep it locked so both sides change by the same factor. Then the picture only gets smaller or bigger and its shape stays the same.</p>
+  <p>The maths is simple. Multiply both sides by the same number. For example, to take 4000 x 3000 down to 1600 pixels wide, the factor is 1600 / 4000 = 0.4. So the height becomes 3000 x 0.4 = 1200, and the result is 1600 x 1200. If you type a width and height that do not match the original ratio and the lock is off, the picture gets stretched or squished: faces look wider, circles turn into ovals. If you do that on purpose, our <a href="/blog/how-to-stretch-image-online.html">guide to stretching an image online</a> explains how.</p>
+
+  <h3>When to resize</h3>
+  <ul>
+    <li><strong>The picture is bigger than the place it will be shown.</strong> A 4000 pixel wide photo used as a 1200 pixel wide blog image carries a lot of pixels that nobody will ever see.</li>
+    <li><strong>A site or form asks for exact dimensions.</strong> For example 600 x 800 pixels for a photo upload, or 1080 pixels wide for a social post.</li>
+    <li><strong>You need a faster page.</strong> Smaller images load faster, which helps visitors and search performance.</li>
+    <li><strong>An email attachment is too big.</strong> Phone photos are often 3 to 8 MB or more. Resizing is the largest single saving.</li>
+    <li><strong>You want a quick, large cut in file size with little visible damage.</strong> Removing pixels the screen cannot even show is the cheapest way to save space.</li>
+  </ul>
+
+  <h3>Resizing and file size</h3>
+  <p>Resizing usually shrinks the file a lot, but the saving is not exactly in step with the pixel count. For example, 4000 x 3000 is 12 million pixels, and 1600 x 1200 is 1.92 million pixels, which is only 16 percent of the original pixel count. The file will often be much smaller, but it will not necessarily be exactly 16 percent of the old size, because content, format and quality setting all play a part. Always check the real size after saving.</p>
+
+  <h2>What Is Compressing?</h2>
+  <p>Compressing changes how the picture is stored, not how big it looks. The width and height stay exactly the same. The software finds a smarter, shorter way to write the same picture into the file, so it takes fewer bytes. A 1200 x 900 blog photo can drop from 2 MB to 300 KB and still be 1200 x 900.</p>
+  <p>There are two kinds of compression:</p>
+  <ul>
+    <li><strong>Lossless</strong> compression makes the file smaller without throwing away any picture information. You get back exactly what you saved. PNG works this way. The saving is usually modest.</li>
+    <li><strong>Lossy</strong> compression throws away small details that the eye barely notices, such as tiny colour changes. The file becomes much smaller, but the lost detail cannot be recovered. JPG and WebP photos usually use this. If you push it too far you see blocky patches, fuzzy edges around text, and banding in smooth backgrounds like the sky.</li>
+  </ul>
+
+  <h3>When to compress</h3>
+  <ul>
+    <li><strong>The size in pixels is already right but the file is too heavy.</strong> This is the classic case for compressing.</li>
+    <li><strong>A form or site has a strict KB or MB limit.</strong> Lowering the quality setting is the fine adjustment that lands just under the limit.</li>
+    <li><strong>You want pages to load faster without changing the layout.</strong> The picture looks the same size, but downloads sooner.</li>
+  </ul>
+
+  <h3>What compressing cannot do</h3>
+  <ul>
+    <li>It cannot fix a wrong shape. If a form wants a square picture, only cropping (or fitting the picture on a square canvas) solves that.</li>
+    <li>It cannot give you a smaller on screen size. Compressing never changes the width and height.</li>
+    <li>It cannot undo damage. If you compress the same JPG again and again, each round loses a bit more detail. Always work from the original.</li>
+  </ul>
+  <p>For a deeper look at keeping quality while saving space, read <a href="/blog/blog-compress-image-without-losing-quality.html">how to compress images without losing quality</a>.</p>
+
+  <h2>Resize vs Compress: The Difference in One Example</h2>
+  <p>Take one photo that is 4000 x 3000 pixels and 5 MB, and you want to use it on a blog.</p>
+  <ul>
+    <li><strong>Only resize</strong> it to 1200 x 900. It now looks right for the blog and the file might be around 400 KB, but it may still be heavier than you want if the quality was very high.</li>
+    <li><strong>Only compress</strong> it. It is still 4000 x 3000. The file might drop to 1.5 MB, but it is still huge for a page that only shows 1200 pixels, and the browser still downloads far more pixels than it can display.</li>
+    <li><strong>Resize and then compress.</strong> You get 1200 x 900 at perhaps 150 to 250 KB, which is light, sharp enough and the right size.</li>
+  </ul>
+  <p>The numbers will vary from photo to photo, but the pattern is reliable: resizing handles the big wins, and compressing handles the fine tuning.</p>
+
+  <h2>Crop vs Resize: The Difference in One Example</h2>
+  <p>You have a 4000 x 3000 photo and you need a perfect 1080 x 1080 square for a social media post.</p>
+  <ul>
+    <li><strong>If you only resize</strong> to 1080 x 1080, the software has to squeeze a 4:3 picture into a 1:1 box. The picture gets distorted: people look narrow, and buildings look tilted or squashed.</li>
+    <li><strong>If you crop first</strong> to a 1:1 square, for example 3000 x 3000, and then resize that square to 1080 x 1080, the proportions stay correct and nothing is stretched.</li>
+  </ul>
+  <p>This is the most common reason photos "look off" after being resized. The rule is simple: if the shape has to change, crop first. Resizing alone can only keep the shape or distort it.</p>
+
+  <h2>When to Use Each One</h2>
+  <table class="compare-table">
+    <tr><th>Your problem</th><th>Use this</th></tr>
+    <tr><td>The picture has too much empty space or a distraction at the edge</td><td>Crop</td></tr>
+    <tr><td>The picture is the wrong shape for a square, banner or print size</td><td>Crop</td></tr>
+    <tr><td>The picture is much bigger in pixels than the place it will be used</td><td>Resize</td></tr>
+    <tr><td>A form wants exact pixel dimensions, such as 600 x 800</td><td>Resize (after cropping if the shape is different)</td></tr>
+    <tr><td>The dimensions are right but the file is over the KB or MB limit</td><td>Compress</td></tr>
+    <tr><td>The page is slow because of large images</td><td>Resize first, then compress</td></tr>
+    <tr><td>An email will not send because of the attachment size</td><td>Resize, then compress if still needed</td></tr>
+    <tr><td>You need to remove an unwanted object or person at the edge</td><td>Crop</td></tr>
+  </table>
+
+  <h2>A Sensible Order: Crop, Resize, Then Compress</h2>
+  <p>When you need more than one job, this order gives the best result with the least wasted effort and the least damage.</p>
+  <ol class="steps-list">
+    <li><strong>Crop first.</strong> Fix the composition and the shape. If you resized first, you would waste effort on pixels you are about to throw away, and you could end up with the wrong ratio.</li>
+    <li><strong>Resize second.</strong> Bring the cropped picture to the exact pixel size you need, with the aspect ratio locked.</li>
+    <li><strong>Compress last.</strong> Save it with the lowest quality setting that still looks good and fits the file size limit. Compress last, because every lossy save removes a little detail, so you only want to do it once.</li>
+    <li><strong>Check the result.</strong> Open the saved file and look at its width, height and size. View it at the size it will really be used, then zoom in on text, edges and smooth areas.</li>
+  </ol>
+  <p>For example, a 4000 x 3000 phone photo that must become a 400 x 400 profile picture under 100 KB: crop to a square around the face (for instance 2800 x 2800), resize that square to 400 x 400, then compress it as a JPG until the file is under 100 KB. Three small steps, and every one does a different job.</p>
+  <div class="callout">
+    <strong>Always keep your original.</strong> Cropping removes pixels, shrinking removes pixels, and lossy compression removes detail. Once you save over the only copy, you cannot go back. Work on a copy, and keep the master untouched in case you need a different size later.
+  </div>
+
+  <h2>Which Combination Do You Need?</h2>
+  <ul>
+    <li><strong>Crop only:</strong> the pixel size is already fine, but the framing is wrong.</li>
+    <li><strong>Resize only:</strong> the framing is right, but the picture is too large or too small in pixels.</li>
+    <li><strong>Compress only:</strong> the size in pixels is right and the shape is right, but the file is over a limit.</li>
+    <li><strong>Crop then resize:</strong> you need a fixed shape and fixed pixels, such as a 1080 x 1080 social post.</li>
+    <li><strong>Resize then compress:</strong> you need a light web image or an email attachment, and the shape is already fine.</li>
+    <li><strong>All three:</strong> you need a particular shape, a particular size in pixels and a particular file size, such as an exam or ID photo upload. See our guides to <a href="/blog/reduce-image-size-in-kb-for-forms.html">hitting a KB limit for forms</a> and <a href="/blog/passport-photo-size-pixels-kb-dpi.html">passport photo size in pixels, KB and DPI</a>.</li>
+  </ul>
 
   <h2>Common Mix-Ups</h2>
-<strong>"Cropping makes the picture smaller."</strong> It makes the frame smaller, but the remaining pixels keep their size. Cropping does not scale anything.
-<strong>"Resizing reduces quality."</strong> Making an image smaller keeps it looking clean at the new size, though fine detail is lost. Making it larger is the step that makes it look blurry; see <a href="/blog/why-resized-image-looks-blurry.html">why resized images look blurry</a>.
-<strong>"Compressing always shrinks by a fixed amount."</strong> It does not. The result depends on the image, the format and the setting. See <a href="/blog/blog-compress-image-without-losing-quality.html">how to compress images without losing quality</a>, and <a href="/blog/reduce-image-size-in-kb-for-forms.html">how to hit a KB limit</a>.
+  <h3>"Cropping will make my file small enough."</h3>
+  <p>Sometimes a little, but it is the wrong tool for a size limit. It changes the picture, and the saving depends on how much you cut. Resizing and compressing are made for this job.</p>
+  <h3>"Compressing will make the picture smaller on my screen."</h3>
+  <p>No. Compressing only changes the number of bytes. The width and height stay the same, so the picture will take up the same space on the page.</p>
+  <h3>"Resizing and compressing are the same thing."</h3>
+  <p>They are not. Resizing changes pixels, and compressing changes how the data is stored. They work well together, but each one fixes a different problem.</p>
+  <h3>"Fewer pixels always means a smaller file."</h3>
+  <p>Usually, but not always. A detailed image with fewer pixels can still be heavier than a simple image with more pixels. The format and the quality setting have a big effect, so compare the real numbers after you save.</p>
+  <h3>"I can make a small picture big again without loss."</h3>
+  <p>No. Enlarging cannot bring back detail that was not captured. It only adds guessed pixels, which look soft. If you need a bigger picture, start from a higher resolution original.</p>
+  <h3>"PPI or DPI changes how big my image looks on screen."</h3>
+  <p>For screens, only the pixel width and height matter. PPI and DPI matter mainly for printing. A 1200 pixel wide image looks the same size on a website whether its metadata says 72 or 300.</p>
+  <h3>"I resized to exact pixels and now it looks stretched."</h3>
+  <p>The shape of the picture did not match the shape you asked for. Crop to the right ratio first, and then resize.</p>
+
+  <h2>Quality Check Before You Upload</h2>
+  <ul>
+    <li>Reopen the final file and confirm the width, height and file size.</li>
+    <li>View it at the real display size first, then zoom into faces, text, thin lines and smooth skies.</li>
+    <li>Look for blocky patches, ringing around letters and colour banding. These mean the quality setting is too low.</li>
+    <li>If it was a PNG with a transparent background, check that the transparency survived.</li>
+    <li>If a site or form still rejects it, check the shape and format before lowering quality any further.</li>
+  </ul>
 
   <h2>Frequently Asked Questions</h2>
   <div class="faq-list">
     <div class="faq-item">
       <div class="faq-q" onclick="toggleFaq(this)">Does cropping reduce file size? <span class="faq-arrow">▾</span></div>
-      <div class="faq-a">Often, because fewer pixels are saved, but the amount depends on the content and format. Cropping is meant to change composition, not to hit a file-size target.</div>
+      <div class="faq-a">Often, because fewer pixels are saved, but the amount depends on the content and format. Cropping is meant to change composition, not to hit a file size target. If you need a certain KB limit, resize and compress instead of relying on a crop.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="toggleFaq(this)">Which is better for hitting a KB limit, resizing or compressing? <span class="faq-arrow">▾</span></div>
-      <div class="faq-a">Usually a mix. Reducing the dimensions gives the largest saving with the least visible damage. Lowering quality then fine-tunes the size.</div>
+      <div class="faq-a">Usually a mix. Reducing the dimensions gives the largest saving with the least visible damage. Lowering quality then fine tunes the size so the file lands just under the limit. Start with resizing, then compress.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="toggleFaq(this)">Can I resize without changing the shape? <span class="faq-arrow">▾</span></div>
-      <div class="faq-a">Yes. Keep the aspect ratio locked, and both dimensions change by the same proportion.</div>
+      <div class="faq-a">Yes. Keep the aspect ratio locked, and both dimensions change by the same proportion. A 4000 x 3000 photo resized to 1600 pixels wide becomes 1600 x 1200, with exactly the same 4:3 shape.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Should I crop or resize first? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Crop first, then resize. Cropping decides what stays in the picture and its shape. Resizing then brings that cropped picture to the exact pixel size. If you resize first, you spend effort on pixels you will later cut, and you may end up with the wrong ratio or a stretched result.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Does resizing or compressing lower image quality? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Shrinking a picture to a size that matches where it is shown usually looks just as sharp, because you only remove pixels the screen cannot show. Enlarging does hurt quality. Lossy compression always loses some detail, so use the highest quality that meets your size limit, and never compress the same file again and again.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can compression fix the wrong aspect ratio? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">No. Compression only changes the number of bytes. To change the shape, crop to the ratio you need, or fit the whole picture on a canvas of the right shape if you cannot lose any edges.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I enlarge a small image without losing quality? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Not reliably. Enlarging adds new pixels by guessing, so it cannot recover missing detail, and the result tends to look soft or blocky. A small enlargement may look fine, but for anything important use a higher resolution original.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Which format should I save in after resizing or cropping? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">JPG suits most photos and gives small files, but it has no transparency. PNG keeps exact detail and transparency, which suits logos and screenshots, but photos can become large. WebP is often smaller than both on websites. Re-saving in a new format can sometimes make a file bigger, so always compare the real file sizes.</div>
     </div>
   </div>
 
