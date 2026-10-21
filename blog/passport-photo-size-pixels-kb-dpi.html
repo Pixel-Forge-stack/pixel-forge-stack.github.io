@@ -10,7 +10,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Passport Photo Size Explained: Pixels, KB and DPI |</title>
+<title>Passport Photo Size Explained: Pixels, KB and DPI | Pixel Forge Stack</title>
 <meta name="description" content="How passport photo sizes in millimetres relate to pixels, DPI and file size in KB, with worked examples for 35 × 45 mm and 2 × 2 inch photos."/>
 <link rel="canonical" href="https://pixel-forge-stack.github.io/blog/passport-photo-size-pixels-kb-dpi.html"/>
 <meta property="og:title" content="Passport Photo Size Explained: Pixels, KB and DPI | Pixel Forge Stack"/>
@@ -97,64 +97,9 @@ footer p{font-size:.82rem}
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://pixel-forge-stack.github.io/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://pixel-forge-stack.github.io/blog.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Passport Photo Size Explained",
-      "item": "https://pixel-forge-stack.github.io/blog/passport-photo-size-pixels-kb-dpi.html"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is 35 \u00d7 45 mm in pixels?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "At 300 PPI it is about 413 \u00d7 531 pixels. At other resolutions the pixel count scales with the PPI."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does DPI matter for an online upload?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Usually the pixel dimensions and file size matter more than the DPI value, because screens use pixels. Follow whatever the form specifies."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Will resizing make my photo acceptable?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Resizing only changes size. Acceptance depends on the authority's rules for the photo itself."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why does my passport photo look stretched?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The photo was probably not in the same proportion as the output size. Crop it to 7:9 first, then resize."
-      }
-    }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pixel-forge-stack.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://pixel-forge-stack.github.io/blog.html" },
+    { "@type": "ListItem", "position": 3, "name": "Passport Photo Size Explained", "item": "https://pixel-forge-stack.github.io/blog/passport-photo-size-pixels-kb-dpi.html" }
   ]
 }
   </script>
@@ -175,7 +120,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </ul>
 </nav>
 
-<div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog.html">Blog</a> &rsaquo; Reduce Image Size in KB</div>
+<div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog.html">Blog</a> &rsaquo; Passport Photo Size Explained</div>
 
 <div class="article-header">
   <div class="meta-line">Guide &middot; 7 min read</div>
@@ -185,12 +130,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="article-wrap">
 
-  <p>Passport and visa photo requirements mix several different units: millimetres or inches for the printed photo, pixels for online uploads, and kilobytes for the file. Understanding how they connect makes the instructions much easier to follow.</p>
+  <p>Passport and visa photo requirements mix several different units: millimetres or inches for the printed photo, pixels for online uploads, and kilobytes for the file. It is easy to get confused, because each unit measures something different, and a photo can pass one rule and fail another. Understanding how they connect makes the instructions much easier to follow.</p>
+  <p>This guide explains the four units in plain words, shows the simple formula that turns millimetres into pixels, explains why DPI is often misunderstood, and shows how pixel size and KB relate. You will also see what a resizer can and cannot do, a clear workflow to follow, how to check your own file, and the mistakes that cause most rejections.</p>
+
+  <h2>The Four Units You Will Meet</h2>
+  <p>Before any maths, it helps to know what each unit actually describes.</p>
+  <table class="compare-table">
+    <tr><th>Unit</th><th>What It Measures</th><th>Where You See It</th></tr>
+    <tr><td>Millimetres or inches</td><td>The physical size of a printed photo</td><td>Printed photo rules, such as 35 × 45 mm</td></tr>
+    <tr><td>Pixels</td><td>The width and height of a digital photo</td><td>Online upload rules, such as 600 × 750 px</td></tr>
+    <tr><td>PPI or DPI</td><td>How many pixels fit in one inch when printed</td><td>Print instructions, such as 300 DPI</td></tr>
+    <tr><td>KB or MB</td><td>How much storage the file uses</td><td>Upload limits, such as 50 KB to 250 KB</td></tr>
+  </table>
+  <p>The first three are linked by a simple formula. The fourth, file size, is a separate thing that depends on compression. Keep this in mind, because most confusion comes from mixing them up.</p>
 
   <h2>Millimetres, Pixels and DPI</h2>
   <p>A printed photo has a physical size. A digital photo has pixel dimensions. The pixels per inch (PPI, often called DPI) link the two: pixels = inches × PPI.</p>
   <p>A 35 × 45 mm photo is about 1.38 × 1.77 inches. At 300 PPI that is roughly 413 × 531 pixels. A 2 × 2 inch photo (51 × 51 mm), the size used for US passports, is 600 × 600 pixels at 300 PPI.</p>
-<table class="compare-table">
+  <table class="compare-table">
     <tr><th>Photo size</th><th>Inches</th><th>Pixels at 300 PPI</th></tr>
     <tr><td>35 × 45 mm</td><td>1.38 × 1.77</td><td>about 413 × 531</td></tr>
     <tr><td>50 × 60 mm</td><td>1.97 × 2.36</td><td>about 591 × 709</td></tr>
@@ -198,34 +155,162 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </table>
   <p>The numbers are only an example. Always use the size, resolution and file format your own authority specifies. Requirements differ between countries and between passports, visas and ID cards, and they can change.</p>
 
+  <h3>The formula, step by step</h3>
+  <p>If the size is given in inches, the maths is easy: multiply by the PPI. If it is given in millimetres, first divide by 25.4 to get inches, because one inch is 25.4 mm, and then multiply by the PPI.</p>
+  <ul>
+    <li><strong>Pixels = inches × PPI</strong></li>
+    <li><strong>Pixels = millimetres ÷ 25.4 × PPI</strong></li>
+  </ul>
+  <p>For example, take the 35 mm width. 35 ÷ 25.4 is about 1.378 inches, and 1.378 × 300 is about 413 pixels. For the 45 mm height, 45 ÷ 25.4 is about 1.772 inches, and 1.772 × 300 is about 531 pixels. Pixels cannot be split, so the answer is rounded to a whole number.</p>
+  <p>Here are a few more sizes that people often search for, all worked out at 300 PPI. Treat them as examples and confirm the size on your own form.</p>
+  <table class="compare-table">
+    <tr><th>Common Use</th><th>Print Size</th><th>Pixels at 300 PPI</th></tr>
+    <tr><td>US passport or visa</td><td>2 × 2 in (51 × 51 mm)</td><td>600 × 600</td></tr>
+    <tr><td>UK, India, Schengen and many others</td><td>35 × 45 mm</td><td>413 × 531</td></tr>
+    <tr><td>Canada</td><td>50 × 70 mm</td><td>591 × 827</td></tr>
+    <tr><td>China</td><td>33 × 48 mm</td><td>390 × 567</td></tr>
+    <tr><td>UAE</td><td>40 × 60 mm</td><td>472 × 709</td></tr>
+  </table>
+
+  <h3>What DPI really is</h3>
+  <p>DPI is not a quality setting. It is a label that tells a printer how large to draw each pixel. A file that is 600 pixels wide can print 2 inches wide at 300 PPI, or 4 inches wide at 150 PPI. It is the same set of pixels, only drawn at a different size, and the 4 inch version will look softer.</p>
+  <div class="callout">
+    <strong>Important:</strong> Typing "300" into a DPI box does not add detail to a small photo. It only changes the label stored in the file. Real sharpness comes from having enough real pixels.
+  </div>
+  <p>For an online upload, the screen uses pixels, so the pixel size and the file size usually matter more than the DPI number. For printing, 300 PPI is the common standard, and some services use 600 PPI for extra detail. Follow whatever your form or print shop asks for.</p>
+
+  <h2>Why the Shape of the Photo Matters</h2>
+  <p>Every size also has a shape, called the aspect ratio. A photo of 35 × 45 mm has the shape 7:9, which means it is a little taller than it is wide. A 2 × 2 inch photo is a perfect square, 1:1. Some online portals use a slightly different shape from the printed photo, such as 600 × 750 pixels, which is 4:5.</p>
+  <p>This matters a lot. If your photo does not already have the right shape and you force it into a different size, the picture gets stretched, and faces look wide or thin. A passport photo that looks stretched is a common reason for rejection. The fix is simple: first crop to the right shape, then resize. Never use stretching to fix the shape of a face.</p>
+
   <h2>Pixels Versus KB</h2>
   <p>Kilobytes measure the file, not the picture. Two photos with identical pixel dimensions can differ greatly in KB depending on the format, quality setting and content. Online portals often set both a pixel size and a KB range, and you may need to meet both.</p>
   <p>To reach a KB limit, set the pixel dimensions first, then lower the JPG quality until the file fits. A walk-through is in <a href="/blog/reduce-image-size-in-kb-for-forms.html">how to reduce image size in KB for forms</a>.</p>
 
+  <h3>A rough idea of file sizes</h3>
+  <p>This table shows roughly how big a JPG portrait on a plain background can be at moderate to high quality. Every photo is different, so use it only as a guide.</p>
+  <table class="compare-table">
+    <tr><th>Pixel Size</th><th>Rough File Size</th></tr>
+    <tr><td>413 × 531</td><td>20 KB to 60 KB</td></tr>
+    <tr><td>600 × 600</td><td>25 KB to 70 KB</td></tr>
+    <tr><td>630 × 810</td><td>35 KB to 100 KB</td></tr>
+    <tr><td>1200 × 1200</td><td>100 KB to 300 KB</td></tr>
+  </table>
+  <p>More pixels usually means a bigger file, but not always. A busy background, grainy low light and heavy detail all make a file larger. A plain background and even light make it smaller.</p>
+
+  <h2>Print Rules and Online Rules Are Different</h2>
+  <p>A printed photo and an online upload are checked in different ways. For print, what matters is the physical size, the paper, and enough pixels for a sharp result at 300 PPI. For an online portal, the system usually checks the pixel size, the shape, the file type and the KB range, and often ignores DPI.</p>
+  <p>Here are a few examples of how different the rules can be. These are only examples, and every authority can update its rules, so always read the current official instructions.</p>
+  <ul>
+    <li><strong>UK online passport photo:</strong> a digital photo that is at least 600 pixels wide and 750 pixels high, as a JPG file of about 50 KB to 10 MB.</li>
+    <li><strong>US visa digital photo:</strong> a square JPG between 600 × 600 and 1200 × 1200 pixels, with a small maximum file size.</li>
+    <li><strong>India online passport upload:</strong> a JPG of about 630 × 810 pixels with a file size limit of a few hundred KB, and a plain white background.</li>
+  </ul>
+  <p>Notice how the shapes and sizes are all different. This is why you should never copy a size from a random website without checking the form you are using.</p>
+
   <h2>What a Resizer Can and Cannot Do</h2>
   <p>A resizer such as the <a href="/resize-image-passport.html">passport photo preset</a> or <a href="/resize-for-print.html">Resize for Print</a> changes pixel dimensions. It does not detect your face, centre your head, change the background, or confirm that a photo meets any official rule.</p>
   <p>Because the passport preset forces an exact 413 × 531 frame, crop the photo to the same 7:9 proportion first with <a href="/crop-image.html">Crop Image</a>, otherwise the face will look stretched. Rules usually also cover background colour, head size and position, expression and sometimes limits on retouching, so check the issuing authority's guidelines or its own photo checker.</p>
+  <ul>
+    <li><strong>A resizer can:</strong> set exact pixel dimensions, prepare a file at a size for print, and help you reach a smaller file.</li>
+    <li><strong>A resizer cannot:</strong> fix a dark photo, remove shadows, correct your head position, change the background, or add detail that was never in the picture.</li>
+  </ul>
+
+  <h2>Start With a Good Photo</h2>
+  <p>The best way to get a clean passport photo is to take a good one in the first place. A few simple habits help a lot:</p>
+  <ul>
+    <li><strong>Use the rear camera.</strong> It is usually sharper than the selfie camera. Ask a friend to take the photo, because selfies often distort the face.</li>
+    <li><strong>Use soft, even light.</strong> Stand facing a window in daylight so there are no shadows on the face or the wall behind you.</li>
+    <li><strong>Use a plain background.</strong> A plain wall makes the file smaller and avoids rejection for objects or patterns behind you.</li>
+    <li><strong>Keep the camera at eye level</strong> and look straight at it, with a neutral expression.</li>
+    <li><strong>Do not rely on enlarging.</strong> If the photo is small, taking a new one is better than enlarging it, which only adds blur. Our guide on <a href="/blog/why-resized-image-looks-blurry.html">why resized images look blurry</a> explains why.</li>
+  </ul>
+  <p>Most phone cameras today are more than enough. A 12 megapixel phone photo is about 4000 × 3000 pixels, which is far larger than any passport size, so you will normally be reducing the photo, not enlarging it.</p>
 
   <h2>A Practical Workflow</h2>
-<ol class="steps-list"><li>Read the requirements: physical size or pixel size, file type, KB limit, background and head position.</li><li>Take or choose a photo that already meets the visual rules.</li><li>Crop to the required proportion.</li><li>Resize to the required pixel dimensions.</li><li>Save as JPG, and if there is a KB limit, <a href="/compress-image.html">compress</a> gradually until the file fits, then zoom in to confirm the face is still clear.</li></ol>
+  <ol class="steps-list">
+    <li><strong>Read the requirements:</strong> physical size or pixel size, file type, KB limit, background and head position.</li>
+    <li><strong>Take or choose a photo</strong> that already meets the visual rules.</li>
+    <li><strong>Crop to the required proportion.</strong> This keeps the face from looking stretched.</li>
+    <li><strong>Resize to the required pixel dimensions.</strong> Use the exact numbers from the form.</li>
+    <li><strong>Save as JPG,</strong> and if there is a KB limit, compress gradually until the file fits, then zoom in to confirm the face is still clear.</li>
+    <li><strong>Keep your original.</strong> If a portal rejects the file, you can start again from the original without losing quality.</li>
+  </ol>
+
+  <h3>Meeting a pixel size and a KB limit together</h3>
+  <p>Do the work in this order: shape first, pixels second, KB last. If you compress first and resize afterwards, the file size changes again and may go over the limit. Leave a few KB of space under the limit, because some programs count 1 KB as 1000 bytes and others as 1024. You can compress with our <a href="/compress-image.html">Compress Image</a> tool.</p>
+
+  <h2>How to Check Your File on a Computer</h2>
+  <p>Before you upload, check the real numbers instead of guessing.</p>
+  <ul>
+    <li><strong>On Windows:</strong> right click the file, choose Properties, open the Details tab, and look at Dimensions for the pixel size. The Size line shows the file size.</li>
+    <li><strong>On a Mac:</strong> open the file in Preview, choose Tools, then Show Inspector, and look at the pixel dimensions and file size.</li>
+    <li><strong>Zoom to 100 percent</strong> and make sure the face, eyes and hair edges look clear.</li>
+  </ul>
+
+  <h2>Printing the Photo Correctly</h2>
+  <p>If you are printing at home or at a shop, the details matter just as much as the pixels.</p>
+  <ul>
+    <li>Print at 100 percent or "Actual Size". Settings like "Fit to page" or "Fill" change the size and ruin the measurements.</li>
+    <li>Use good photo paper, not ordinary office paper.</li>
+    <li>Measure the printed photo with a ruler to confirm it matches the required size.</li>
+    <li>A 4 × 6 inch print sheet at 300 PPI is 1200 × 1800 pixels. Two 2 inch photos fit across and three fit down, so one sheet can hold six US size photos with no stretching.</li>
+  </ul>
+
+  <h2>Common Mistakes</h2>
+  <p><strong>Thinking 300 DPI makes a photo sharp.</strong> DPI is only a label. Without enough real pixels, the print will still look soft.</p>
+  <p><strong>Stretching the photo to fit.</strong> If the shape is wrong, crop first. Stretching makes faces look wrong.</p>
+  <p><strong>Using one country's size for another.</strong> A 600 × 600 pixel photo is not accepted everywhere. Check your own form.</p>
+  <p><strong>Ignoring the KB range.</strong> Some forms have both a maximum and a minimum size. A file that is too small can be rejected too.</p>
+  <p><strong>Compressing too hard.</strong> A tiny file with blocky patches on the face can be refused. Reduce the pixel size a little instead.</p>
+  <p><strong>Using filters or heavy editing.</strong> Many authorities do not allow retouching, so avoid beauty filters and strong colour changes.</p>
+  <p><strong>Printing with "Fit to page".</strong> This changes the size and the head measurements.</p>
+  <p><strong>Starting from a screenshot or a chat photo.</strong> These are already small and compressed. Use the original file from your camera.</p>
+
+  <h2>Quick Checklist</h2>
+  <ul>
+    <li>Do I know the exact size, file type and KB range the form wants?</li>
+    <li>Is the photo cropped to the right shape before resizing?</li>
+    <li>Are the width and height in pixels exactly right?</li>
+    <li>Is the file a few KB under the limit?</li>
+    <li>Is the face sharp when I zoom to 100 percent?</li>
+    <li>Does the photo follow the rules for background, head position and expression?</li>
+    <li>Have I kept the original file?</li>
+  </ul>
 
   <h2>Frequently Asked Questions</h2>
   <div class="faq-list">
     <div class="faq-item">
       <div class="faq-q" onclick="toggleFaq(this)">What is 35 × 45 mm in pixels? <span class="faq-arrow">▾</span></div>
-      <div class="faq-a">At 300 PPI it is about 413 × 531 pixels. At other resolutions the pixel count scales with the PPI.</div>
+      <div class="faq-a">At 300 PPI it is about 413 × 531 pixels. At other resolutions the pixel count scales with the PPI. For example, at 600 PPI it is about 827 × 1063 pixels. The formula is millimetres divided by 25.4, multiplied by the PPI.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="toggleFaq(this)">Does DPI matter for an online upload? <span class="faq-arrow">▾</span></div>
-      <div class="faq-a">Usually the pixel dimensions and file size matter more than the DPI value, because screens use pixels. Follow whatever the form specifies.</div>
+      <div class="faq-a">Usually the pixel dimensions and file size matter more than the DPI value, because screens use pixels. Follow whatever the form specifies. DPI matters most when you print the photo.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="toggleFaq(this)">Will resizing make my photo acceptable? <span class="faq-arrow">▾</span></div>
-      <div class="faq-a">No. Resizing only changes size. Acceptance depends on the authority's rules for the photo itself.</div>
+      <div class="faq-a">No. Resizing only changes size. Acceptance depends on the authority's rules for the photo itself, such as background, head size, position, expression and lighting.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="toggleFaq(this)">Why does my passport photo look stretched? <span class="faq-arrow">▾</span></div>
       <div class="faq-a">The photo was probably not in the same proportion as the output size. Crop it to 7:9 first, then resize.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What is the difference between pixels, DPI and KB? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">Pixels are the width and height of the digital picture. DPI (or PPI) says how many pixels fit in one inch when printed, so it links pixels to the printed size. KB measures how much storage the file uses, and it depends on the format and compression, not just the pixel size.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What size in pixels should a digital passport photo be? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">It depends on the country and the portal. Some ask for 600 × 600, some for 630 × 810, and some for at least 600 × 750. Always use the exact size, file type and KB range written on the form you are filling, because these rules can change.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How do I get a passport photo under a KB limit? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">First set the exact pixel size, then compress the JPG slowly until the file is a few KB below the limit. Zoom in afterwards to make sure the face is still clear. If quality drops too much, use a slightly smaller pixel size instead of pushing the compression further.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I just change the DPI to 300 to make the photo sharper? <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">No. Changing the DPI number only changes a label in the file. It does not add pixels or detail. A sharp print needs enough real pixels, so start with a clear, high resolution photo and crop it carefully.</div>
     </div>
   </div>
 
